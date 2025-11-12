@@ -6,7 +6,7 @@ import { navbarIcons } from "@/src/constants/navbar_index";
 
 const Sidebar = () => {
   return (
-    <div className="hidden lg:block fixed top-0 left-0 h-screen w-68 bg-background-900 border-r border-border-medium">
+    <div className="hidden lg:block sticky top-0 self-start h-screen w-68 bg-background-900 border-r border-border-medium">
       <div className="flex flex-col w-full min-h-screen gap-10 p-6">
         <div className="flex items-center justify-center w-full pr-8">
           <Link
