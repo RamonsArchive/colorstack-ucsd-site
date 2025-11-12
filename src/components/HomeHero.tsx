@@ -5,8 +5,20 @@ import Image from "next/image";
 
 const HomeHero = () => {
   return (
-    <div className="flex flex-col items-center border border-border-medium rounded-lg p-12">
-      <div className="flex flex-col gap-16 max-w-3xl w-full">
+    <div className="relative flex flex-col items-center justify-center border border-border-medium rounded-lg p-12 h-full overflow-hidden">
+      {/* Futuristic wave/radial background */}
+      <div className="absolute inset-0 opacity-80 pointer-events-none z-10">
+        {/* Wave effect with dots */}
+        <Image
+          src="/Assets/Background/wave-dots.svg"
+          alt=""
+          fill
+          className="object-cover"
+          style={{ objectFit: "cover" }}
+        />
+      </div>
+
+      <div className="relative z-10 flex flex-col gap-16 max-w-3xl w-full">
         <h1 className="text-6xl font-bold text-center">{homeHeroData.title}</h1>
 
         <div className="flex flex-row justify-between w-full">
@@ -30,7 +42,7 @@ const HomeHero = () => {
             </div>
           </div>
           <div className="flex flex-1">
-            <div className="relative w-full h-full flex-1 min-h-[400px] overflow-visible">
+            <div className="relative z-10 w-full h-full flex-1 min-h-[400px] overflow-visible">
               <Image
                 src={homeHeroData.images.image1.src}
                 alt={homeHeroData.images.image1.alt}
