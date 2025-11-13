@@ -1,23 +1,21 @@
 "use client";
-
 import React from "react";
-import { WhereWeGoneData } from "../constants/home_index";
+import { PartnersData } from "../constants/home_index";
 import TitleSection from "./TitleSection";
 import InfiniteScrollLogos from "./InfiniteScrollLogos";
 
-const WhereWeGone = () => {
+const Partners = () => {
   return (
     <div className="flex flex-row gap-5 w-full items-center overflow-hidden">
       <TitleSection
-        title={WhereWeGoneData.titleSection.title}
-        index={WhereWeGoneData.titleSection.index}
-        isInfinite={true}
+        title={PartnersData.titleSection.title}
+        index={PartnersData.titleSection.index}
       />
       <div className="flex-1 min-w-0 overflow-hidden max-w-full">
-        <InfiniteScrollLogos logos={WhereWeGoneData.logos} />
+        <InfiniteScrollLogos logos={PartnersData.logos} />
       </div>
     </div>
   );
 };
 
-export default WhereWeGone;
+export default Partners;
