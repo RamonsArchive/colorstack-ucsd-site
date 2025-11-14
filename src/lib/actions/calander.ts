@@ -22,7 +22,7 @@ export const fetchUpcomingEvents = async () => {
         );
       
         url.searchParams.set("key", apiKey);
-       // url.searchParams.set("timeMin", timeMin);
+        //url.searchParams.set("timeMin", timeMin);
         url.searchParams.set("singleEvents", "true");
         url.searchParams.set("orderBy", "startTime");
         url.searchParams.set("maxResults", "3");

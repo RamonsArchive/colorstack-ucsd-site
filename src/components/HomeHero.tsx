@@ -23,7 +23,7 @@ const HomeHero = () => {
 
         <div className="flex flex-row justify-between w-full">
           <div className="flex flex-col gap-10 w-1/2">
-            <p className="text-lg text-text-secondary">
+            <p className="text-lg text-text-secondary text-regular">
               {homeHeroData.description}
             </p>
             <div className="flex flex-row gap-5">
