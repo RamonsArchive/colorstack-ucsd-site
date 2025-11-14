@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const HomeHero = () => {
   return (
-    <div className="relative flex flex-col items-center justify-center border border-border-medium rounded-lg p-12 h-full overflow-hidden">
+    <div className="relative flex flex-col items-center justify-center border border-border-medium rounded-4xl p-12 h-full overflow-hidden">
       {/* Futuristic wave/radial background */}
       <div className="absolute inset-0 opacity-80 pointer-events-none z-10">
         {/* Wave effect with dots */}
@@ -48,21 +48,21 @@ const HomeHero = () => {
                 alt={homeHeroData.images.image1.alt}
                 width={200}
                 height={200}
-                className="absolute top-0 right-0 w-48 h-48 object-cover rounded-lg transition-all duration-300 ease-in-out hover:scale-110 -rotate-8 shadow-lg z-10"
+                className="absolute top-0 right-0 w-48 h-48 object-cover rounded-4xl transition-all duration-300 ease-in-out hover:scale-110 -rotate-8 shadow-lg z-10"
               />
               <Image
                 src={homeHeroData.images.image2.src}
                 alt={homeHeroData.images.image2.alt}
                 width={200}
                 height={200}
-                className="absolute bottom-30 left-0 w-36 h-36 object-cover rounded-lg transition-all duration-300 ease-in-out hover:scale-110 rotate-6 shadow-lg z-10"
+                className="absolute bottom-30 left-0 w-36 h-36 object-cover rounded-4xl transition-all duration-300 ease-in-out hover:scale-110 rotate-6 shadow-lg z-10"
               />
               <Image
                 src={homeHeroData.images.image3.src}
                 alt={homeHeroData.images.image3.alt}
                 width={200}
                 height={200}
-                className="absolute top-60 right-10 w-38 h-38 object-cover rounded-lg transition-all duration-300 ease-in-out hover:scale-110 rotate-3 shadow-lg z-10"
+                className="absolute top-60 right-10 w-38 h-38 object-cover rounded-4xl transition-all duration-300 ease-in-out hover:scale-110 rotate-3 shadow-lg z-10"
               />
             </div>
           </div>

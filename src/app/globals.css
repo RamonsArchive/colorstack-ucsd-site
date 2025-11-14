@@ -170,6 +170,15 @@ body {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(var(--scroll-distance, -100%));
+    transform: translateX(calc(-1 * var(--scroll-distance, 100%)));
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(calc(-1 * var(--scroll-distance, 100%)));
+  }
+  100% {
+    transform: translateX(0);
   }
 }

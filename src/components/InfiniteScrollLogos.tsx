@@ -5,7 +5,13 @@ import Image from "next/image";
 import { logoPaths } from "../constants/home_index";
 import { Logo } from "../utils/GlobalTypes";
 
-const InfiniteScrollLogos = ({ logos }: { logos: Logo[] }) => {
+const InfiniteScrollLogos = ({
+  logos,
+  direction = "left",
+}: {
+  logos: Logo[];
+  direction?: "left" | "right";
+}) => {
   const firstSetRef = useRef<HTMLDivElement>(null);
   const secondSetRef = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -25,7 +31,8 @@ const InfiniteScrollLogos = ({ logos }: { logos: Logo[] }) => {
           const firstSetLeft = firstSetRef.current.offsetLeft;
           const secondSetLeft = secondSetRef.current.offsetLeft;
           const distance = secondSetLeft - firstSetLeft;
-          setScrollDistance(-distance);
+          // For left: negative distance, for right: positive distance
+          setScrollDistance(direction === "left" ? -distance : distance);
         }
       });
     };
@@ -38,19 +45,19 @@ const InfiniteScrollLogos = ({ logos }: { logos: Logo[] }) => {
       clearTimeout(timeoutId);
       window.removeEventListener("resize", measureWidth);
     };
-  }, [logos]);
+  }, [logos, direction]);
 
   return (
-    <div className="overflow-hidden w-full min-w-0">
+    <div className="overflow-hidden w-full min-w-0 py-2">
       <div
         ref={containerRef}
         className="flex flex-row gap-12 relative"
         style={
           {
             animation: scrollDistance
-              ? `scroll-left ${20}s linear infinite`
+              ? `scroll-${direction} ${20}s linear infinite`
               : "none",
-            "--scroll-distance": `${scrollDistance}px`,
+            "--scroll-distance": `${Math.abs(scrollDistance)}px`,
           } as React.CSSProperties & { "--scroll-distance": string }
         }
       >
@@ -65,20 +72,20 @@ const InfiniteScrollLogos = ({ logos }: { logos: Logo[] }) => {
                 href={logo.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="shrink-0 text-text-primary opacity-60 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center w-10 h-10"
+                className="shrink-0 text-text-primary opacity-60 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center w-12 h-12"
               >
                 <Image
                   src={logoPath}
                   alt={logo.name}
-                  width={40}
-                  height={40}
-                  className="w-10 h-10 object-contain"
+                  width={48}
+                  height={48}
+                  className="w-12 h-12 object-contain"
                 />
               </a>
             );
           })}
         </div>
-        {/* Duplicate set for seamless loop */}
+        {/* Duplicate sets for seamless loop - using 5 sets to ensure coverage on all screen sizes */}
         <div ref={secondSetRef} className="flex items-center gap-12 shrink-0">
           {logos.map((logo, idx) => {
             const logoPath = logoPaths[logo.id];
@@ -89,20 +96,20 @@ const InfiniteScrollLogos = ({ logos }: { logos: Logo[] }) => {
                 href={logo.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="shrink-0 text-text-primary opacity-60 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center w-10 h-10"
+                className="shrink-0 text-text-primary opacity-60 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center w-12 h-12"
               >
                 <Image
                   src={logoPath}
                   alt={logo.name}
-                  width={40}
-                  height={40}
-                  className="w-10 h-10 object-contain"
+                  width={48}
+                  height={48}
+                  className="w-12 h-12 object-contain"
                 />
               </a>
             );
           })}
         </div>
-        {/* Third duplicate set to ensure coverage on all screen sizes */}
+        {/* Third duplicate set */}
         <div className="flex items-center gap-12 shrink-0">
           {logos.map((logo, idx) => {
             const logoPath = logoPaths[logo.id];
@@ -113,14 +120,62 @@ const InfiniteScrollLogos = ({ logos }: { logos: Logo[] }) => {
                 href={logo.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="shrink-0 text-text-primary opacity-60 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center w-10 h-10"
+                className="shrink-0 text-text-primary opacity-60 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center w-12 h-12"
               >
                 <Image
                   src={logoPath}
                   alt={logo.name}
-                  width={40}
-                  height={40}
-                  className="w-10 h-10 object-contain"
+                  width={48}
+                  height={48}
+                  className="w-12 h-12 object-contain"
+                />
+              </a>
+            );
+          })}
+        </div>
+        {/* Fourth duplicate set - ensures seamless scrolling on wide screens */}
+        <div className="flex items-center gap-12 shrink-0">
+          {logos.map((logo, idx) => {
+            const logoPath = logoPaths[logo.id];
+            if (!logoPath) return null;
+            return (
+              <a
+                key={`fourth-${idx}`}
+                href={logo.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="shrink-0 text-text-primary opacity-60 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center w-12 h-12"
+              >
+                <Image
+                  src={logoPath}
+                  alt={logo.name}
+                  width={48}
+                  height={48}
+                  className="w-12 h-12 object-contain"
+                />
+              </a>
+            );
+          })}
+        </div>
+        {/* Fifth duplicate set - extra coverage for very wide screens */}
+        <div className="flex items-center gap-12 shrink-0">
+          {logos.map((logo, idx) => {
+            const logoPath = logoPaths[logo.id];
+            if (!logoPath) return null;
+            return (
+              <a
+                key={`fifth-${idx}`}
+                href={logo.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="shrink-0 text-text-primary opacity-60 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center w-12 h-12"
+              >
+                <Image
+                  src={logoPath}
+                  alt={logo.name}
+                  width={48}
+                  height={48}
+                  className="w-12 h-12 object-contain"
                 />
               </a>
             );

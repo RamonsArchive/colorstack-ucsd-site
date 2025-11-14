@@ -14,7 +14,7 @@ const WhereWeGone = () => {
         isInfinite={true}
       />
       <div className="flex-1 min-w-0 overflow-hidden max-w-full">
-        <InfiniteScrollLogos logos={WhereWeGoneData.logos} />
+        <InfiniteScrollLogos logos={WhereWeGoneData.logos} direction="left" />
       </div>
     </div>
   );
