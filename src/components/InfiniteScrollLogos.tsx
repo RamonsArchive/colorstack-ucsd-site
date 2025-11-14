@@ -3,7 +3,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import Image from "next/image";
 import { logoPaths } from "../constants/home_index";
-import { Logo } from "../utils/GlobalTypes";
+import { Logo } from "../lib/GlobalTypes";
 
 const InfiniteScrollLogos = ({
   logos,

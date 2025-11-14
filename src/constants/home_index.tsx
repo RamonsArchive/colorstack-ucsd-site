@@ -1,5 +1,5 @@
 import React from "react";
-import { Logo } from "../utils/GlobalTypes";
+import { Logo } from "../lib/GlobalTypes";
 
 export const homeHeroData = {
   title: (
@@ -91,12 +91,15 @@ export const PartnersData = {
   ],
 };
 
-export const homeTitleSections = {
-  upcomingEvents: {
+export const UpcomingEventsData = {
+  titleSection: {
     id: "upcoming-events",
     index: 3,
     title: "Upcoming Events",
   },
+};
+
+export const homeTitleSections = {
   mission: {
     id: "mission",
     index: 4,

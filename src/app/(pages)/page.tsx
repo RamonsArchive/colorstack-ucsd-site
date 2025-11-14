@@ -2,8 +2,14 @@ import Image from "next/image";
 import HomeHero from "@/src/components/HomeHero";
 import WhereWeGone from "@/src/components/WhereWeGone";
 import Partners from "@/src/components/Partners";
+import UpcomingEvents from "@/src/components/UpcomingEvents";
+import { fetchUpcomingEvents } from "@/src/lib/actions/calander";
 
-export default function Home() {
+export default async function Home() {
+  // call fetch upcoming evens on server using server actions for maximum performance
+  const upcomingEvents = await fetchUpcomingEvents();
+  console.log(upcomingEvents);
+
   return (
     <div className="flex items-center w-full">
       <div className="flex flex-col gap-26 p-10 w-full max-w-full">
@@ -13,6 +19,7 @@ export default function Home() {
 
         <WhereWeGone />
         <Partners />
+        <UpcomingEvents upcomingEvents={upcomingEvents.data} />
       </div>
     </div>
   );
