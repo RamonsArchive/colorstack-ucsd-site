@@ -75,7 +75,7 @@ const GenericHero = ({ heroData }: { heroData: GenericHeroData }) => {
           </svg>
         </div>
 
-        <div className="relative z-10 flex flex-col gap-8 lg:gap-16 max-w-3xl w-full h-full overflow-visible">
+        <div className="relative z-10 flex flex-col gap-8 lg:gap-16 max-w-3xl w-full overflow-visible">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-center">
             {title}
           </h1>
@@ -122,15 +122,15 @@ const GenericHero = ({ heroData }: { heroData: GenericHeroData }) => {
               </div>
             </div>
             {/* below the text and button */}
-            <div className="flex flex-1 justify-center items-center min-h-[250px] lg:min-h-auto w-full">
-              <div className="relative z-10 w-full h-full max-w-[200px] flex-1 xs:max-w-lg md:max-w-xl lg:max-w-full lg:min-h-[150px] lg:max-h-[250px] overflow-visible">
+            <div className="flex flex-1 justify-center items-center ">
+              <div className="relative z-10 w-full h-full flex-1 min-h-[250px] min-w-[200px] xs:max-w-xl lg:max-w-full lg:min-h-[150px] lg:max-h-[250px] overflow-visible">
                 {/* left image */}
                 <Image
                   src={images.image2.src}
                   alt={images.image2.alt}
                   width={200}
                   height={200}
-                  className="absolute top-[50%] lg:-top-[15%] left-[10%] w-22 h-22 xs:w-32 xs:h-32 sm:w-48 sm:h-48  object-cover rounded-4xl transition-all duration-300 ease-in-out hover:scale-110 rotate-6 shadow-lg z-10"
+                  className="absolute top-[40%] lg:-top-[15%] left-[5%] w-32 h-32 xs:w-48 xs:h-48  object-cover rounded-4xl transition-all duration-300 ease-in-out hover:scale-110 rotate-6 shadow-lg z-10"
                 />
                 {/* center image */}
                 <Image
@@ -138,14 +138,7 @@ const GenericHero = ({ heroData }: { heroData: GenericHeroData }) => {
                   alt={images.image3.alt}
                   width={200}
                   height={200}
-                  className="absolute top-[40%] lg:-top-[15%] right-[40%] lg:right-[30%]  w-26 h-26 xs:w-32 xs:h-32 sm:w-48 sm:h-48 object-cover rounded-4xl transition-all duration-300 ease-in-out hover:scale-110 -rotate-3 shadow-lg z-10"
-                />
-                <Image
-                  src={images.image1.src}
-                  alt={images.image1.alt}
-                  width={200}
-                  height={200}
-                  className="absolute lg:hidden top-[50%] lg:top-[5%] right-[0%]  w-22 h-22 xs:w-36 xs:h-36 sm:w-48 sm:h-48 object-cover rounded-4xl transition-all duration-300 ease-in-out hover:scale-110 -rotate-8 shadow-lg z-10"
+                  className="absolute top-[30%] lg:-top-[15%] right-[5%] lg:right-[30%] w-32 h-32 xs:w-48 xs:h-48 sm:w-48 sm:h-48 object-cover rounded-4xl transition-all duration-300 ease-in-out hover:scale-110 -rotate-3 shadow-lg z-10"
                 />
               </div>
             </div>
