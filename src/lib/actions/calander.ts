@@ -28,8 +28,8 @@ export const fetchUpcomingEvents = async () => {
         url.searchParams.set("maxResults", "3");
       
         const res = await fetch(url.toString(), {
-            cache: "no-store",
-            //next: { revalidate: 300 } // Or cache for 5 minutes
+            //cache: "no-store",
+            next: { revalidate: 300 } // Or cache for 5 minutes
         });
         console.log("Response from Google Calendar API", res);
         console.log(res);

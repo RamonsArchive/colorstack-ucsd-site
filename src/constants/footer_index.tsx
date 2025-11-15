@@ -13,7 +13,7 @@ export const footerData = {
         },
         description: (
           <>
-            Part of the ColorStack National network →{" "}
+            Part of the ColorStack National organization →{" "}
             <Link
               href="https://colorstack.org"
               className="text-text-secondary hover:text-text-primary transition-colors duration-300 underline"

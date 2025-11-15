@@ -8,7 +8,7 @@ const SkinnyCard = ({ card }: { card: StaticCardType }) => {
       <div className="flex flex-row gap-3 items-center text-xl lg:text-2xl">
         {icon}
       </div>
-      <div className="flex flex-col gap-3 items-center">
+      <div className="flex flex-col gap-3 items-center text-center">
         <h3 className="text-xl xs:text-2xl font-semibold text-text-primary">
           {title}
         </h3>
