@@ -4,10 +4,11 @@ import Image from "next/image";
 import FooterCard from "./FooterCard";
 
 const Footer = () => {
-  const { affiliationData, contactData, quickLinksData } = footerData;
+  const { affiliationData, contactData, quickLinksData, socialsData } =
+    footerData;
   return (
-    <div className="flex flex-col gap-10">
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 border-t border-border-medium p-10 w-full">
+    <div className="flex flex-col gap-10 border-t border-border-medium">
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-10 p-10 w-full">
         <div className="flex flex-col gap-5 justify-start items-start">
           <div className="flex items-center justify-start w-full">
             <Image
@@ -24,6 +25,8 @@ const Footer = () => {
             </p>
           </div>
         </div>
+        <FooterCard data={socialsData} />
+
         <FooterCard data={contactData} />
         <FooterCard data={quickLinksData} />
       </div>
