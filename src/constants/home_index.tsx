@@ -99,6 +99,36 @@ export const UpcomingEventsData = {
   },
 };
 
+export const OurMissionData = {
+  titleSection: {
+    id: "our-mission",
+    index: 4,
+    title: "Our Mission",
+  },
+  textCards: [
+    {
+      id: "description1",
+      text: (
+        <>
+          Color<span className="text-primary-500">S</span>tack at UCSD is
+          dedicated to increasing the number of Black and Latinx Computer
+          Science graduates entering the tech industry.
+        </>
+      ),
+    },
+    {
+      id: "description2",
+      text: (
+        <>
+          We provide mentorship, technical workshops, career development
+          resources, and a supportive community to help our members succeed in
+          their academic and professional journeys.
+        </>
+      ),
+    },
+  ],
+};
+
 export const homeTitleSections = {
   mission: {
     id: "mission",

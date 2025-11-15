@@ -13,7 +13,7 @@ const Partners = () => {
       <TitleSection
         title={PartnersData.titleSection.title}
         index={PartnersData.titleSection.index}
-        isInfinite={true}
+        isInfinite={false}
       />
     </div>
   );

@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const HomeHero = () => {
   return (
-    <div className="relative flex flex-col items-center justify-center border border-border-medium rounded-4xl p-12 h-full overflow-hidden">
+    <div className="relative flex flex-col items-center justify-center border border-border-medium rounded-4xl p-12 h-full overflow-hidden shadow-lg">
       {/* Futuristic wave/radial background */}
       <div className="absolute inset-0 opacity-80 pointer-events-none z-10">
         {/* Wave effect with dots */}

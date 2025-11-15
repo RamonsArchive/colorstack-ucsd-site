@@ -11,7 +11,7 @@ const WhereWeGone = () => {
       <TitleSection
         title={WhereWeGoneData.titleSection.title}
         index={WhereWeGoneData.titleSection.index}
-        isInfinite={true}
+        isInfinite={false}
       />
       <div className="flex-1 min-w-0 overflow-hidden max-w-full">
         <InfiniteScrollLogos logos={WhereWeGoneData.logos} direction="left" />

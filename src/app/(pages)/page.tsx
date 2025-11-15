@@ -1,9 +1,9 @@
-import Image from "next/image";
 import HomeHero from "@/src/components/HomeHero";
 import WhereWeGone from "@/src/components/WhereWeGone";
 import Partners from "@/src/components/Partners";
 import UpcomingEvents from "@/src/components/UpcomingEvents";
 import { fetchUpcomingEvents } from "@/src/lib/actions/calander";
+import OurMission from "@/src/components/OurMission";
 
 export default async function Home() {
   // call fetch upcoming evens on server using server actions for maximum performance
@@ -20,6 +20,7 @@ export default async function Home() {
         <WhereWeGone />
         <Partners />
         <UpcomingEvents upcomingEvents={upcomingEvents.data} />
+        <OurMission />
       </div>
     </div>
   );
