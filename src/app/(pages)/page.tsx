@@ -12,15 +12,17 @@ export default async function Home() {
 
   return (
     <div className="flex items-center w-full">
-      <div className="flex flex-col gap-26 p-10 w-full max-w-full">
-        <div className="flex flex-col h-[calc(100vh-5rem)] shrink-0 max-w-7xl w-full">
+      <div className="flex flex-col gap-26 w-full max-w-full">
+        <div className="flex flex-col gap-10 xs:p-5 lg:p-10">
           <HomeHero />
         </div>
 
-        <WhereWeGone />
-        <Partners />
-        <UpcomingEvents upcomingEvents={upcomingEvents.data} />
-        <OurMission />
+        <div className="flex flex-col gap-26 p-5 lg:p-10">
+          <WhereWeGone />
+          <Partners />
+          <UpcomingEvents upcomingEvents={upcomingEvents.data} />
+          <OurMission />
+        </div>
       </div>
     </div>
   );

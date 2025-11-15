@@ -7,7 +7,7 @@ import InfiniteScrollLogos from "./InfiniteScrollLogos";
 
 const WhereWeGone = () => {
   return (
-    <div className="flex flex-row gap-5 w-full items-center overflow-hidden">
+    <div className="flex flex-col xs:flex-row gap-5 w-full items-start xs:items-center overflow-hidden">
       <TitleSection
         title={WhereWeGoneData.titleSection.title}
         index={WhereWeGoneData.titleSection.index}

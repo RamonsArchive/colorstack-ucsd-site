@@ -134,7 +134,7 @@ const InfiniteScrollLogos = ({
           })}
         </div>
         {/* Fourth duplicate set - ensures seamless scrolling on wide screens */}
-        <div className="flex items-center gap-12 shrink-0">
+        <div className="xs:flex hidden items-center gap-12 shrink-0">
           {logos.map((logo, idx) => {
             const logoPath = logoPaths[logo.id];
             if (!logoPath) return null;
@@ -158,7 +158,7 @@ const InfiniteScrollLogos = ({
           })}
         </div>
         {/* Fifth duplicate set - extra coverage for very wide screens */}
-        <div className="flex items-center gap-12 shrink-0">
+        <div className="xs:flex hidden items-center gap-12 shrink-0">
           {logos.map((logo, idx) => {
             const logoPath = logoPaths[logo.id];
             if (!logoPath) return null;

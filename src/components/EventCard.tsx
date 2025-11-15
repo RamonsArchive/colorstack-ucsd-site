@@ -28,7 +28,7 @@ const EventCard = ({ event }: { event: CalendarEvent }) => {
     >
       {/* Title - More prominent */}
       <div className="pb-2 border-b border-border-medium group-hover:border-white transition-colors duration-300">
-        <h3 className="text-2xl font-semibold text-text-primary group-hover:text-text-primary transition-colors duration-300">
+        <h3 className="text-xl xs:text-2xl font-semibold text-text-primary group-hover:text-text-primary transition-colors duration-300">
           {summary || "Untitled Event"}
         </h3>
       </div>
