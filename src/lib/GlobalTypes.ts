@@ -79,3 +79,8 @@ export type GenericHeroData = {
 }
 
 
+export type StaticCardType = {
+  icon: string;
+  title: string;
+  description: string;
+}
