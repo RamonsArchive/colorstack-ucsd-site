@@ -8,14 +8,14 @@ const HomeHero = () => {
     <div className="flex flex-col h-[calc(100vh-5rem)] shrink-0 max-w-7xl w-full overflow-hidden">
       <div className="relative flex flex-col items-center justify-center xs:border xs:border-border-medium rounded-4xl p-8 lg:p-12 h-full overflow-hidden shadow-lg">
         {/* Futuristic wave/radial background */}
-        <div className="absolute inset-0 opacity-80 pointer-events-none z-10">
+        <div className="absolute inset-0 opacity-80 pointer-events-none z-10 overflow-hidden">
           {/* Wave effect with dots */}
           <Image
             src="/Assets/Background/wave-dots.svg"
             alt=""
             fill
-            className="object-cover"
-            style={{ objectFit: "cover" }}
+            className="object-cover animate-wave-float"
+            style={{ objectFit: "cover", objectPosition: "center top" }}
           />
         </div>
 
