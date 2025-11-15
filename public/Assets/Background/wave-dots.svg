@@ -17,8 +17,8 @@
   <rect width="1200" height="800" fill="url(#dotPattern)"/>
   
   <!-- Wave shapes -->
-  <path d="M0,400 Q300,300 600,400 T1200,400 L1200,800 L0,800 Z" fill="url(#waveGradient)"/>
-  <path d="M0,500 Q400,400 800,500 T1200,500 L1200,800 L0,800 Z" fill="url(#waveGradient)" opacity="0.6"/>
-  <path d="M0,300 Q200,200 400,300 T800,300 T1200,300 L1200,800 L0,800 Z" fill="url(#waveGradient)" opacity="0.4"/>
+  <path id="wave1" d="M0,400 Q300,300 600,400 T1200,400 L1200,800 L0,800 Z" fill="url(#waveGradient)"/>
+  <path id="wave2" d="M0,500 Q400,400 800,500 T1200,500 L1200,800 L0,800 Z" fill="url(#waveGradient)" opacity="0.6"/>
+  <path id="wave3" d="M0,300 Q200,200 400,300 T800,300 T1200,300 L1200,800 L0,800 Z" fill="url(#waveGradient)" opacity="0.4"/>
 </svg>
 

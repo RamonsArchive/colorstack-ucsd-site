@@ -171,8 +171,37 @@ body {
   @apply flex items-center justify-center;
 }
 
-@utility animate-wave-float {
-  animation: wave-float 6s ease-in-out infinite;
+@utility animate-wave-float-1 {
+  animation: wave-float-1 8s ease-in-out infinite;
+}
+
+@utility animate-wave-float-2 {
+  animation: wave-float-2 6s ease-in-out infinite;
+  animation-delay: -2s;
+}
+
+@utility animate-wave-float-3 {
+  animation: wave-float-3 10s ease-in-out infinite;
+  animation-delay: -4s;
+}
+
+/* Target individual waves in SVG - each animates at different rates and heights */
+/* Animations anchored at bottom so only top moves */
+svg #wave1 {
+  animation: wave-float-1 8s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
+svg #wave2 {
+  animation: wave-float-2 6s ease-in-out infinite;
+  animation-delay: -2s;
+  transform-origin: bottom center;
+}
+
+svg #wave3 {
+  animation: wave-float-3 10s ease-in-out infinite;
+  animation-delay: -4s;
+  transform-origin: bottom center;
 }
 
 @keyframes scroll-left {
@@ -193,13 +222,29 @@ body {
   }
 }
 
-@keyframes wave-float {
+@keyframes wave-float-1 {
   0%, 100% {
-    transform: translateY(0px) scale(1.1);
-    transform-origin: top center;
+    transform: translateY(0px);
   }
   50% {
-    transform: translateY(-20px) scale(1.1);
-    transform-origin: top center;
+    transform: translateY(-25px);
+  }
+}
+
+@keyframes wave-float-2 {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes wave-float-3 {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-30px);
   }
 }

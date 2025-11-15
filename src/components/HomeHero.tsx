@@ -9,14 +9,68 @@ const HomeHero = () => {
       <div className="relative flex flex-col items-center justify-center xs:border xs:border-border-medium rounded-4xl p-8 lg:p-12 h-full overflow-hidden shadow-lg">
         {/* Futuristic wave/radial background */}
         <div className="absolute inset-0 opacity-80 pointer-events-none z-10 overflow-hidden">
-          {/* Wave effect with dots */}
-          <Image
-            src="/Assets/Background/wave-dots.svg"
-            alt=""
-            fill
-            className="object-cover animate-wave-float"
-            style={{ objectFit: "cover", objectPosition: "center top" }}
-          />
+          {/* Wave effect with dots - inline SVG for individual wave animation */}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 800"
+            preserveAspectRatio="none"
+            className="w-full h-full"
+            style={{
+              objectFit: "cover",
+              objectPosition: "center bottom",
+              minHeight: "110%",
+              height: "110%",
+            }}
+          >
+            <defs>
+              {/* Dot pattern */}
+              <pattern
+                id="dotPattern"
+                x="0"
+                y="0"
+                width="20"
+                height="20"
+                patternUnits="userSpaceOnUse"
+              >
+                <circle cx="10" cy="10" r="1" fill="#CDCDCD" opacity="0.2" />
+              </pattern>
+
+              {/* Wave gradient */}
+              <linearGradient
+                id="waveGradient"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="100%"
+              >
+                <stop offset="0%" stopColor="#CDCDCD" stopOpacity="0.15" />
+                <stop offset="50%" stopColor="#CDCDCD" stopOpacity="0.08" />
+                <stop offset="100%" stopColor="#CDCDCD" stopOpacity="0.15" />
+              </linearGradient>
+            </defs>
+
+            {/* Background with dot pattern */}
+            <rect width="1200" height="800" fill="url(#dotPattern)" />
+
+            {/* Wave shapes - each with different animation */}
+            <path
+              id="wave1"
+              d="M0,400 Q300,300 600,400 T1200,400 L1200,800 L0,800 Z"
+              fill="url(#waveGradient)"
+            />
+            <path
+              id="wave2"
+              d="M0,500 Q400,400 800,500 T1200,500 L1200,800 L0,800 Z"
+              fill="url(#waveGradient)"
+              opacity="0.6"
+            />
+            <path
+              id="wave3"
+              d="M0,300 Q200,200 400,300 T800,300 T1200,300 L1200,800 L0,800 Z"
+              fill="url(#waveGradient)"
+              opacity="0.4"
+            />
+          </svg>
         </div>
 
         <div className="relative z-10 flex flex-col gap-8 lg:gap-16 max-w-3xl w-full">
