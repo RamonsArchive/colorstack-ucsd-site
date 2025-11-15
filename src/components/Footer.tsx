@@ -35,7 +35,7 @@ const Footer = () => {
           &copy; {new Date().getFullYear()} ColorStack at UCSD. All rights
           reserved.
         </p>
-        <span className="text-xs text-text-muted">❤️</span>
+        <span className="text-xs text-text-muted">🔱</span>
       </div>
     </div>
   );

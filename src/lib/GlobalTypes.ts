@@ -45,5 +45,37 @@ export type FooterDataType = {
     data: FooterItem[];
 }
 
+export type ButtonType = {
+  name: string;
+  href: string;
+  variant: "primary" | "secondary";
+}
+
+export type GenericHeroData = {
+  title: React.ReactNode;
+  description: React.ReactNode;
+  primaryButton?: ButtonType;
+  secondaryButton?: ButtonType;
+  images: {
+    image1: {
+      src: string;
+      alt: string;
+      width: number;
+      height: number;
+    };
+    image2: {
+      src: string;
+      alt: string;
+      width: number;
+      height: number;
+    };
+    image3: {
+      src: string;
+      alt: string;
+      width: number;
+      height: number;
+    };
+  };
+}
 
 
