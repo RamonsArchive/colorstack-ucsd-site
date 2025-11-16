@@ -1,5 +1,5 @@
 export const scheduleHeroData = {
-  title: <>Schedule</>,
+  title: <>Our Schedule</>,
   description: (
     <>
       The best way to connect with ColorStack, is to show up to events and

@@ -50,11 +50,12 @@ export const executiveBoardData = {
           community here on campus.
         </>
       ),
+      linkedin: "www.linkedin.com/in/ramonmnm100",
       image: {
         src: "/Board/Executive/ramon_mcdarghmitchell.png",
         alt: "Ramon Mitchell",
-        width: 100,
-        height: 100,
+        width: 350,
+        height: 350,
       },
     },
     {
@@ -72,11 +73,12 @@ export const executiveBoardData = {
           community here on campus.
         </>
       ),
+      linkedin: "www.linkedin.com/in/ramonmnm100",
       image: {
         src: "/Board/Executive/ramon_mcdarghmitchell.png",
         alt: "Ramon Mitchell",
-        width: 100,
-        height: 100,
+        width: 350,
+        height: 350,
       },
     },
     {
@@ -94,11 +96,12 @@ export const executiveBoardData = {
           community here on campus.
         </>
       ),
+      linkedin: "www.linkedin.com/in/ramonmnm100",
       image: {
         src: "/Board/Executive/ramon_mcdarghmitchell.png",
         alt: "Ramon Mitchell",
-        width: 100,
-        height: 100,
+        width: 350,
+        height: 350,
       },
     },
   ],
@@ -126,11 +129,12 @@ export const developmentBoardData = {
           community here on campus.
         </>
       ),
+      linkedin: "www.linkedin.com/in/ramonmnm100",
       image: {
         src: "/Board/Development/ramon_mcdarghmitchell.png",
         alt: "Ramon Mitchell",
-        width: 100,
-        height: 100,
+        width: 350,
+        height: 350,
       },
     },
     {
@@ -148,11 +152,12 @@ export const developmentBoardData = {
           community here on campus.
         </>
       ),
+      linkedin: "www.linkedin.com/in/ramonmnm100",
       image: {
         src: "/Board/Development/ramon_mcdarghmitchell.png",
         alt: "Ramon Mitchell",
-        width: 100,
-        height: 100,
+        width: 350,
+        height: 350,
       },
     },
     {
@@ -170,11 +175,12 @@ export const developmentBoardData = {
           community here on campus.
         </>
       ),
+      linkedin: "www.linkedin.com/in/ramonmnm100",
       image: {
         src: "/Board/Development/ramon_mcdarghmitchell.png",
         alt: "Ramon Mitchell",
-        width: 100,
-        height: 100,
+        width: 350,
+        height: 350,
       },
     },
     {
@@ -192,11 +198,12 @@ export const developmentBoardData = {
           community here on campus.
         </>
       ),
+      linkedin: "www.linkedin.com/in/ramonmnm100",
       image: {
         src: "/Board/Development/ramon_mcdarghmitchell.png",
         alt: "Ramon Mitchell",
-        width: 100,
-        height: 100,
+        width: 350,
+        height: 350,
       },
     },
   ],
@@ -224,11 +231,12 @@ export const outreachBoardData = {
           community here on campus.
         </>
       ),
+      linkedin: "www.linkedin.com/in/ramonmnm100",
       image: {
         src: "/Board/Outreach/ramon_mcdarghmitchell.png",
         alt: "Ramon Mitchell",
-        width: 100,
-        height: 100,
+        width: 350,
+        height: 350,
       },
     },
     {
@@ -246,11 +254,12 @@ export const outreachBoardData = {
           community here on campus.
         </>
       ),
+      linkedin: "www.linkedin.com/in/ramonmnm100",
       image: {
         src: "/Board/Outreach/ramon_mcdarghmitchell.png",
         alt: "Ramon Mitchell",
-        width: 100,
-        height: 100,
+        width: 350,
+        height: 350,
       },
     },
   ],
@@ -278,11 +287,12 @@ export const financeBoardData = {
           community here on campus.
         </>
       ),
+      linkedin: "www.linkedin.com/in/ramonmnm100",
       image: {
         src: "/Board/Finance/ramon_mcdarghmitchell.png",
         alt: "Ramon Mitchell",
-        width: 100,
-        height: 100,
+        width: 350,
+        height: 350,
       },
     },
     {
@@ -300,11 +310,12 @@ export const financeBoardData = {
           community here on campus.
         </>
       ),
+      linkedin: "www.linkedin.com/in/ramonmnm100",
       image: {
         src: "/Board/Finance/ramon_mcdarghmitchell.png",
         alt: "Ramon Mitchell",
-        width: 100,
-        height: 100,
+        width: 350,
+        height: 350,
       },
     },
     {
@@ -322,11 +333,12 @@ export const financeBoardData = {
           community here on campus.
         </>
       ),
+      linkedin: "www.linkedin.com/in/ramonmnm100",
       image: {
         src: "/Board/Finance/ramon_mcdarghmitchell.png",
         alt: "Ramon Mitchell",
-        width: 100,
-        height: 100,
+        width: 350,
+        height: 350,
       },
     },
     {
@@ -344,11 +356,12 @@ export const financeBoardData = {
           community here on campus.
         </>
       ),
+      linkedin: "www.linkedin.com/in/ramonmnm100",
       image: {
         src: "/Board/Finance/ramon_mcdarghmitchell.png",
         alt: "Ramon Mitchell",
-        width: 100,
-        height: 100,
+        width: 350,
+        height: 350,
       },
     },
   ],

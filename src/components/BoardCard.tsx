@@ -3,16 +3,17 @@ import { BoardCardType } from "../lib/GlobalTypes";
 import Image from "next/image";
 
 const BoardCard = ({ card }: { card: BoardCardType }) => {
-  const { name, title, image, favoriteSong, favoriteMovie, whyJoin } = card;
+  const { name, title, image, favoriteSong, favoriteMovie, whyJoin, linkedin } =
+    card;
   return (
     <div className="flex flex-col w-full items-center justify-center gap-3 p-6 xs:p-8 rounded-4xl shadow-lg border border-border-medium active:border-white hover:border-white hover:shadow-xl transition-all duration-300 cursor-pointer bg-bg-secondary">
       <div className="flex flex-row items-center justify-center w-full">
         <Image
           src={image.src}
           alt={image.alt}
-          width={300}
-          height={300}
-          className="w-full aspect-square object-cover rounded-2xl"
+          width={image.width}
+          height={image.height}
+          className="w-full aspect-square object-cover rounded-4xl"
         />
       </div>
       <div className="flex flex-col w-full items-start">

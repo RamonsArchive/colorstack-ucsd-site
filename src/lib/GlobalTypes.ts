@@ -79,5 +79,6 @@ export type BoardCardType = {
   favoriteSong: string;
   favoriteMovie: string;
   whyJoin: React.ReactNode;
+  linkedin: string;
   image: ImageType;
 }
