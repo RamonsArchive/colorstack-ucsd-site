@@ -2,6 +2,7 @@ import React from "react";
 import { footerData } from "../constants/footer_index";
 import Image from "next/image";
 import FooterCard from "./FooterCard";
+import Link from "next/link";
 
 const Footer = () => {
   const { affiliationData, contactData, quickLinksData, socialsData } =
@@ -10,7 +11,7 @@ const Footer = () => {
     <div className="flex flex-col gap-10 border-t border-border-medium">
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-10 p-10 w-full">
         <div className="flex flex-col gap-5 justify-start items-start">
-          <div className="flex items-center justify-start w-full">
+          <Link href="/" className="flex items-center justify-start w-full">
             <Image
               src={affiliationData.affiliations[0].logo.src}
               alt={affiliationData.affiliations[0].logo.alt}
@@ -18,7 +19,7 @@ const Footer = () => {
               height={affiliationData.affiliations[0].logo.height}
               className="object-contain"
             />
-          </div>
+          </Link>
           <div className="flex flex-col gap-2">
             <p className="text-sm font-light text-text-secondary leading-relaxed">
               {affiliationData.affiliations[0].description}

@@ -80,7 +80,7 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
                 className="font-medium group flex flex-row items-center gap-3 text-lg text-text-primary transition-colors duration-300"
                 onClick={onClose}
               >
-                <div className="h-[0.1px] w-10 bg-text-primary group-hover:w-20 transition-all duration-300 ease-in-out"></div>
+                <div className="h-[0.5px] w-10 bg-text-primary group-hover:w-20 transition-all duration-300 ease-in-out"></div>
                 {link.name}
               </Link>
             ))}
