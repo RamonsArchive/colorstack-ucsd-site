@@ -75,62 +75,47 @@ const GenericHero = ({ heroData }: { heroData: GenericHeroData }) => {
           </svg>
         </div>
 
-        <div className="relative z-10 flex flex-col gap-8 lg:gap-16 max-w-3xl w-full overflow-visible">
+        <div className="relative z-10 flex flex-col gap-8 lg:gap-16 max-w-3xl w-full">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-center">
             {title}
           </h1>
 
-          <div className="flex flex-col w-full gap-4 lg:gap-6 overflow-visible">
-            <div className="flex flex-col lg:flex-row justify-between gap-4 lg:gap-6  w-full overflow-visible">
-              <div className="flex flex-col gap-10 w-full lg:w-2/3">
-                <p className="text-lg sm:text-center lg:text-left text-text-secondary text-regular">
-                  {description}
-                </p>
-                {(primaryButton || secondaryButton) && (
-                  <div className="flex flex-row gap-5">
-                    {primaryButton && (
-                      <Button
-                        variant={primaryButton.variant}
-                        href={primaryButton.href}
-                      >
-                        {primaryButton.name}
-                      </Button>
-                    )}
-                    {secondaryButton && (
-                      <Button
-                        variant={secondaryButton.variant}
-                        href={secondaryButton.href}
-                      >
-                        {secondaryButton.name}
-                      </Button>
-                    )}
-                  </div>
-                )}
-              </div>
-
-              {/* to the right of text and button but hidden on desktop */}
-              <div className="hidden lg:flex flex-1 justify-center items-center overflow-visible">
-                <div className="relative z-10 w-full h-full max-w-[300px] xs:max-w-lg md:max-w-xl lg:max-w-full lg:flex-1 min-h-[150px] md:min-h-[200px] lg:min-h-[250px] overflow-visible">
-                  <Image
-                    src={images.image1.src}
-                    alt={images.image1.alt}
-                    width={200}
-                    height={200}
-                    className="absolute -right-[10%] top-[5%] w-22 h-22 xs:w-36 xs:h-36 lg:w-58 lg:h-58 object-cover rounded-4xl transition-all duration-300 ease-in-out hover:scale-110 -rotate-8 shadow-lg z-10"
-                  />
+          <div className="flex flex-col lg:flex-row justify-between w-full lg:gap-8">
+            <div className="flex flex-col gap-10 w-full lg:w-1/2">
+              <p className="text-lg text-text-secondary text-regular">
+                {description}
+              </p>
+              {(primaryButton || secondaryButton) && (
+                <div className="flex flex-row gap-5">
+                  {primaryButton && (
+                    <Button
+                      variant={primaryButton.variant}
+                      href={primaryButton.href}
+                    >
+                      {primaryButton.name}
+                    </Button>
+                  )}
+                  {secondaryButton && (
+                    <Button
+                      variant={secondaryButton.variant}
+                      href={secondaryButton.href}
+                    >
+                      {secondaryButton.name}
+                    </Button>
+                  )}
                 </div>
-              </div>
+              )}
             </div>
-            {/* below the text and button */}
-            <div className="flex flex-1 justify-center items-center ">
-              <div className="relative z-10 w-full h-full flex-1 min-h-[250px] min-w-[200px] xs:max-w-xl lg:max-w-full lg:min-h-[150px] lg:max-h-[250px] overflow-visible">
+            {/* Mobile: images below text with percentage positioning */}
+            <div className="flex lg:hidden flex-1 justify-center items-center">
+              <div className="relative z-10 w-full h-full flex-1 min-h-[250px] min-w-[200px] xs:max-w-xl overflow-visible">
                 {/* left image */}
                 <Image
                   src={images.image2.src}
                   alt={images.image2.alt}
                   width={200}
                   height={200}
-                  className="absolute top-[40%] lg:-top-[50%]  w-32 h-32 xs:w-48 xs:h-48 sm:w-58 sm:h-58 object-cover rounded-4xl transition-all duration-300 ease-in-out hover:scale-110 rotate-6 shadow-lg z-10"
+                  className="absolute top-[40%] w-32 h-32 xs:w-48 xs:h-48 sm:w-58 sm:h-58 object-cover rounded-4xl transition-all duration-300 ease-in-out hover:scale-110 rotate-6 shadow-lg z-10"
                 />
                 {/* center image */}
                 <Image
@@ -138,7 +123,35 @@ const GenericHero = ({ heroData }: { heroData: GenericHeroData }) => {
                   alt={images.image3.alt}
                   width={200}
                   height={200}
-                  className="absolute top-[30%] lg:-top-[50%] right-[5%] lg:right-[30%] w-32 h-32 xs:w-48 xs:h-48 sm:w-58 sm:h-58 object-cover rounded-4xl transition-all duration-300 ease-in-out hover:scale-110 -rotate-3 shadow-lg z-10"
+                  className="absolute top-[30%] right-[5%] w-32 h-32 xs:w-48 xs:h-48 sm:w-58 sm:h-58 object-cover rounded-4xl transition-all duration-300 ease-in-out hover:scale-110 -rotate-3 shadow-lg z-10"
+                />
+              </div>
+            </div>
+            {/* Desktop: three images in flex-1 container on the right (matching HomeHero) */}
+            <div className="hidden lg:flex flex-1 justify-center items-center">
+              <div className="relative z-10 w-full h-full max-w-[300px] xs:max-w-lg md:max-w-xl lg:max-w-full lg:flex-1 min-h-[200px] md:min-h-[300px] lg:min-h-[400px] overflow-visible">
+                <Image
+                  src={images.image1.src}
+                  alt={images.image1.alt}
+                  width={200}
+                  height={200}
+                  className="absolute top-10 right-0 lg:top-0 w-32 h-32 xs:w-36 xs:h-36 sm:w-48 sm:h-48 object-cover rounded-4xl transition-all duration-300 ease-in-out hover:scale-110 -rotate-6 shadow-lg z-10"
+                />
+                {/* left image */}
+                <Image
+                  src={images.image2.src}
+                  alt={images.image2.alt}
+                  width={200}
+                  height={200}
+                  className="absolute bottom-5 left-0 xs:bottom-5 lg:bottom-30 w-32 h-32 xs:w-32 xs:h-32 sm:w-36 sm:h-36 object-cover rounded-4xl transition-all duration-300 ease-in-out hover:scale-110 rotate-6 shadow-lg z-10"
+                />
+                {/* center image */}
+                <Image
+                  src={images.image3.src}
+                  alt={images.image3.alt}
+                  width={200}
+                  height={200}
+                  className="hidden md:block absolute top-25 right-23 xs:right-35 sm:right-60 lg:top-60 lg:right-10 w-26 h-26 xs:w-32 xs:h-32 sm:w-38 sm:h-38 object-cover rounded-4xl transition-all duration-300 ease-in-out hover:scale-110 rotate-3 shadow-lg z-10"
                 />
               </div>
             </div>

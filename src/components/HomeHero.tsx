@@ -78,7 +78,7 @@ const HomeHero = () => {
             {homeHeroData.title}
           </h1>
 
-          <div className="flex flex-col lg:flex-row justify-between w-full">
+          <div className="flex flex-col lg:flex-row justify-between w-full lg:gap-8">
             <div className="flex flex-col gap-10 w-full lg:w-1/2">
               <p className="text-lg text-text-secondary text-regular">
                 {homeHeroData.description}
@@ -105,7 +105,7 @@ const HomeHero = () => {
                   alt={homeHeroData.images.image1.alt}
                   width={200}
                   height={200}
-                  className="absolute top-10 right-0 lg:top-0 w-32 h-32 xs:w-36 xs:h-36 sm:w-48 sm:h-48 object-cover rounded-4xl transition-all duration-300 ease-in-out hover:scale-110 -rotate-8 shadow-lg z-10"
+                  className="absolute top-10 right-0 lg:top-0 w-32 h-32 xs:w-36 xs:h-36 sm:w-48 sm:h-48 object-cover rounded-4xl transition-all duration-300 ease-in-out hover:scale-110 -rotate-6 shadow-lg z-10"
                 />
                 {/* left image */}
                 <Image
