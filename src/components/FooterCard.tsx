@@ -6,11 +6,6 @@ import { footerIcons } from "../constants/footer_index";
 const FooterCard = ({ data }: { data: FooterDataType }) => {
   const { index, title, data: footerData } = data;
 
-  // Check if item is a social (has an icon)
-  const isSocial = (id: string) => {
-    return ["instagram", "discord", "gmail"].includes(id);
-  };
-
   return (
     <div className="flex flex-col gap-5 justify-start items-start">
       <div className="flex flex-row gap-5 items-center w-full">
@@ -21,9 +16,12 @@ const FooterCard = ({ data }: { data: FooterDataType }) => {
       </div>
       <div className="flex flex-col gap-3 text-sm">
         {footerData.map((item) => {
-          // Handle social items (with icons)
-          if (isSocial(item.id)) {
-            const icon = footerIcons(item.id);
+          // Check if item has an icon (social or other icon-enabled items)
+          const icon = footerIcons(item.id);
+          const hasIcon = !!icon;
+
+          // Handle items with icons (socials, GitHub, etc.)
+          if (hasIcon) {
             const href = item.email ? `mailto:${item.email}` : item.href;
 
             if (!href) return null;
@@ -44,7 +42,7 @@ const FooterCard = ({ data }: { data: FooterDataType }) => {
             );
           }
 
-          // Handle email items
+          // Handle email items without icons
           if (item.email) {
             return (
               <a
@@ -57,7 +55,7 @@ const FooterCard = ({ data }: { data: FooterDataType }) => {
             );
           }
 
-          // Handle link items
+          // Handle link items without icons
           if (item.href) {
             return (
               <Link
