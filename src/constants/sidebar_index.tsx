@@ -35,9 +35,9 @@ export const sidebarData = {
       href: "/schedule",
     },
     {
-      id: "team",
-      name: "Team",
-      href: "/team",
+      id: "board",
+      name: "Board",
+      href: "/board",
     },
     {
       id: "joinus",

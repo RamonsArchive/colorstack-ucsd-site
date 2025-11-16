@@ -140,12 +140,12 @@ export const homeTitleSections = {
 // Logo paths - using folder-based SVGs for maintainability
 export const logoPaths: Record<string, string> = {
   // WhereWeGone logos
-  google: "/Assets/WhereWeGone/google.svg",
-  apple: "/Assets/WhereWeGone/apple.svg",
-  meta: "/Assets/WhereWeGone/facebook.png",
-  "qualcomm-institute": "/Assets/WhereWeGone/qualcomm_institute_logo.jpeg",
+  google: "/WhereWeGone/google.svg",
+  apple: "/WhereWeGone/apple.svg",
+  meta: "/WhereWeGone/facebook.png",
+  "qualcomm-institute": "/WhereWeGone/qualcomm_institute_logo.jpeg",
   // Partners logos
-  clutchstudio: "/Assets/Partners/clutchstudio.svg",
-  digitalrevolution: "/Assets/Partners/digitalrevolution.svg",
-  qualcomm: "/Assets/Partners/qualcomm-logo.svg",
+  clutchstudio: "/Partners/clutchstudio.svg",
+  digitalrevolution: "/Partners/digitalrevolution.svg",
+  qualcomm: "/Partners/qualcomm-logo.svg",
 };

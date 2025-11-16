@@ -51,31 +51,19 @@ export type ButtonType = {
   variant: "primary" | "secondary";
 }
 
+export type ImageType = {
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+};
+
 export type GenericHeroData = {
   title: React.ReactNode;
   description: React.ReactNode;
   primaryButton?: ButtonType;
   secondaryButton?: ButtonType;
-  images: {
-    image1: {
-      src: string;
-      alt: string;
-      width: number;
-      height: number;
-    };
-    image2: {
-      src: string;
-      alt: string;
-      width: number;
-      height: number;
-    };
-    image3: {
-      src: string;
-      alt: string;
-      width: number;
-      height: number;
-    };
-  };
+  images: { image1: ImageType; image2: ImageType; image3: ImageType };
 }
 
 
@@ -83,4 +71,13 @@ export type StaticCardType = {
   icon: string;
   title: string;
   description: string;
+}
+
+export type BoardCardType = {
+  name: string;
+  title: string;
+  favoriteSong: string;
+  favoriteMovie: string;
+  whyJoin: React.ReactNode;
+  image: ImageType;
 }

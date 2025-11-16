@@ -3,7 +3,7 @@ import GenericHero from "@/src/components/GenericHero";
 import { aboutHeroData } from "@/src/constants/about_index";
 import OurValues from "@/src/components/OurValues";
 import WhatWeDo from "@/src/components/WhatWeDo";
-import OurTeam from "@/src/components/OurTeam";
+import OurBoard from "@/src/components/OurBoard";
 const AboutPage = () => {
   return (
     <div className="flex items-center w-full">
@@ -15,7 +15,7 @@ const AboutPage = () => {
         <div className="flex flex-col gap-26 p-5 lg:p-10">
           <OurValues />
           <WhatWeDo />
-          <OurTeam />
+          <OurBoard />
         </div>
       </div>
     </div>

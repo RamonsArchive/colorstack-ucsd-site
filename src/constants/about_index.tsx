@@ -94,34 +94,34 @@ export const whatWeDoData = {
   ],
 };
 
-export const ourTeamsData = {
+export const ourBoardData = {
   titleSection: {
-    id: "our-teams",
+    id: "our-board",
     index: 3,
-    title: "Our Teams",
+    title: "Our Board",
   },
   cards: [
     {
       icon: "⭐",
-      title: "Executive",
+      title: "Executive Board",
       description:
         "Set the vision and keep the lights on—calendar, rooms, budget, sponsors, and compliance.",
     },
     {
-      icon: "📣",
-      title: "Outreach",
-      description:
-        "Grow the community with socials, newsletters, partnerships, and headline events.",
-    },
-    {
       icon: "💻",
-      title: "Development",
+      title: "Development Board",
       description:
         "Ship real products for the club and the community; teach, mentor, and build.",
     },
     {
+      icon: "📣",
+      title: "Outreach Board",
+      description:
+        "Grow the community with socials, newsletters, partnerships, and headline events.",
+    },
+    {
       icon: "💳",
-      title: "Finance",
+      title: "Finance Board",
       description:
         "Track dollars in/out, secure funding, and keep every event on budget.",
     },
