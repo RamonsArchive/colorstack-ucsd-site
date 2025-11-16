@@ -6,7 +6,10 @@ export const boardHeroData = {
   description: (
     <>
       Meet the passionate leaders making Color
-      <span className="text-primary-500">S</span>tack @ UCSD possible.
+      <span className="text-primary-500">S</span>tack @ UCSD possible. Our board
+      members are dedicated students who work tirelessly to build community,
+      organize events, and create opportunities for Black and Hispanic software
+      engineering students at UC San Diego.
     </>
   ),
   images: {
