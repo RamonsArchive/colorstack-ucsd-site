@@ -83,7 +83,7 @@ const GenericHero = ({ heroData }: { heroData: GenericHeroData }) => {
           <div className="flex flex-col w-full gap-4 lg:gap-6 overflow-visible">
             <div className="flex flex-col lg:flex-row justify-between gap-4 lg:gap-6  w-full overflow-visible">
               <div className="flex flex-col gap-10 w-full lg:w-2/3">
-                <p className="text-lg text-text-secondary text-regular">
+                <p className="text-lg sm:text-center lg:text-left text-text-secondary text-regular">
                   {description}
                 </p>
                 {(primaryButton || secondaryButton) && (
@@ -116,7 +116,7 @@ const GenericHero = ({ heroData }: { heroData: GenericHeroData }) => {
                     alt={images.image1.alt}
                     width={200}
                     height={200}
-                    className="absolute right-[5%] top-[5%] w-22 h-22 xs:w-36 xs:h-36 sm:w-48 sm:h-48 object-cover rounded-4xl transition-all duration-300 ease-in-out hover:scale-110 -rotate-8 shadow-lg z-10"
+                    className="absolute -right-[10%] top-[5%] w-22 h-22 xs:w-36 xs:h-36 lg:w-58 lg:h-58 object-cover rounded-4xl transition-all duration-300 ease-in-out hover:scale-110 -rotate-8 shadow-lg z-10"
                   />
                 </div>
               </div>
@@ -130,7 +130,7 @@ const GenericHero = ({ heroData }: { heroData: GenericHeroData }) => {
                   alt={images.image2.alt}
                   width={200}
                   height={200}
-                  className="absolute top-[40%] lg:-top-[15%] left-[5%] w-32 h-32 xs:w-48 xs:h-48  object-cover rounded-4xl transition-all duration-300 ease-in-out hover:scale-110 rotate-6 shadow-lg z-10"
+                  className="absolute top-[40%] lg:-top-[50%]  w-32 h-32 xs:w-48 xs:h-48 sm:w-58 sm:h-58 object-cover rounded-4xl transition-all duration-300 ease-in-out hover:scale-110 rotate-6 shadow-lg z-10"
                 />
                 {/* center image */}
                 <Image
@@ -138,7 +138,7 @@ const GenericHero = ({ heroData }: { heroData: GenericHeroData }) => {
                   alt={images.image3.alt}
                   width={200}
                   height={200}
-                  className="absolute top-[30%] lg:-top-[15%] right-[5%] lg:right-[30%] w-32 h-32 xs:w-48 xs:h-48 sm:w-48 sm:h-48 object-cover rounded-4xl transition-all duration-300 ease-in-out hover:scale-110 -rotate-3 shadow-lg z-10"
+                  className="absolute top-[30%] lg:-top-[50%] right-[5%] lg:right-[30%] w-32 h-32 xs:w-48 xs:h-48 sm:w-58 sm:h-58 object-cover rounded-4xl transition-all duration-300 ease-in-out hover:scale-110 -rotate-3 shadow-lg z-10"
                 />
               </div>
             </div>
