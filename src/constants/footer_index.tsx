@@ -13,7 +13,9 @@ export const footerData = {
         },
         description: (
           <>
-            Part of the ColorStack National organization →{" "}
+            Part of the Color
+            <span className="text-primary-500">S</span>tack National
+            organization →{" "}
             <Link
               href="https://colorstack.org"
               className="text-text-secondary hover:text-text-primary transition-colors duration-300 underline"
@@ -129,7 +131,12 @@ const smallerIcons: Record<string, React.ReactElement> = {
 };
 
 export const copyrightData = {
-  text: "© 2025 ColorStack at UCSD. All rights reserved.",
+  text: (
+    <>
+      © 2025 Color<span className="text-primary-500">S</span>tack at UCSD. All
+      rights reserved.
+    </>
+  ),
 };
 
 export const privacyPoliyData = {};

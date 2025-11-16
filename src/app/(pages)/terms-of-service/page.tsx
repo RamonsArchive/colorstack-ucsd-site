@@ -26,7 +26,8 @@ const TermsOfServicePage = () => {
                 By accessing or using this website, you agree to these Terms of
                 Service. If you don{"'"}t agree, please don{"'"}t use the site.
                 These terms apply to all visitors, members, and users of the
-                ColorStack @ UCSD website.
+                Color<span className="text-primary-500">S</span>tack @ UCSD
+                website.
               </p>
             </section>
 
@@ -35,11 +36,12 @@ const TermsOfServicePage = () => {
                 2. What This Site Is
               </h2>
               <p className="leading-relaxed">
-                This is the official website for ColorStack @ UCSD, a student
-                organization at UC San Diego dedicated to supporting Black and
-                Hispanic software engineering students. It{"'"}s designed to
-                help students learn about our organization, join our community,
-                and stay informed about events and opportunities.
+                This is the official website for Color
+                <span className="text-primary-500">S</span>tack @ UCSD, a
+                student organization at UC San Diego dedicated to supporting
+                Black and Hispanic software engineering students. It{"'"}s
+                designed to help students learn about our organization, join our
+                community, and stay informed about events and opportunities.
               </p>
             </section>
 
@@ -61,9 +63,10 @@ const TermsOfServicePage = () => {
               </h2>
               <p className="leading-relaxed">
                 All content on this website, including text, images, logos, and
-                design, is the property of ColorStack @ UCSD or used with
-                permission. Feel free to explore and get inspired, but please
-                respect our intellectual property and don{"'"}t reproduce
+                design, is the property of Color
+                <span className="text-primary-500">S</span>tack @ UCSD or used
+                with permission. Feel free to explore and get inspired, but
+                please respect our intellectual property and don{"'"}t reproduce
                 content without permission.
               </p>
             </section>
@@ -105,11 +108,12 @@ const TermsOfServicePage = () => {
                 7. Membership and Participation
               </h2>
               <p className="leading-relaxed">
-                While we welcome all students interested in joining ColorStack @
-                UCSD, submitting a membership application or contacting us doesn
-                {"'"}t guarantee membership. We evaluate each application based
-                on our membership criteria and capacity. Membership is subject
-                to our club bylaws and UCSD student organization policies.
+                While we welcome all students interested in joining Color
+                <span className="text-primary-500">S</span>tack @ UCSD,
+                submitting a membership application or contacting us doesn't
+                guarantee membership. We evaluate each application based on our
+                membership criteria and capacity. Membership is subject to our
+                club by-laws and UCSD student organization policies.
               </p>
             </section>
 
@@ -118,13 +122,15 @@ const TermsOfServicePage = () => {
                 8. Limitation of Liability
               </h2>
               <p className="leading-relaxed">
-                ColorStack @ UCSD, its officers, members, and the University of
-                California are not liable for any damages, losses, or issues
-                that might arise from using this website or participating in
-                club activities. This site is provided as-is for informational
-                purposes only. We are a student organization and cannot be held
-                responsible for technical issues, data loss, or any consequences
-                of using this website.
+                Color
+                <span className="text-primary-500">S</span>tack @ UCSD, its
+                officers, members, and the University of California are not
+                liable for any damages, losses, or issues that might arise from
+                using this website or participating in club activities. This
+                site is provided as-is for informational purposes only. We are a
+                student organization and cannot be held responsible for
+                technical issues, data loss, or any consequences of using this
+                website.
               </p>
             </section>
 

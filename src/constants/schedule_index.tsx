@@ -2,8 +2,10 @@ export const scheduleHeroData = {
   title: <>Our Schedule</>,
   description: (
     <>
-      The best way to connect with ColorStack, is to show up to events and
-      you’re in the right place to do so. Mark your calendars and come show out!
+      The best way to connect with Color
+      <span className="text-primary-500">S</span>tack, is to show up to events
+      and you’re in the right place to do so. Mark your calendars and come show
+      out!
     </>
   ),
   images: {

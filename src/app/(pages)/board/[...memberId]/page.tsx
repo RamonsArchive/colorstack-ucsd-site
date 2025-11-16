@@ -72,7 +72,8 @@ const MemberPage = async ({
           {/* Why Join Section */}
           <div className="flex flex-col gap-3">
             <p className="text-text-secondary font-semibold text-xs uppercase tracking-wide opacity-70">
-              Why I Joined ColorStack
+              Why I Joined Color
+              <span className="text-primary-500">S</span>tack
             </p>
             <div className="text-text-secondary font-regular text-sm xs:text-base leading-relaxed">
               {whyJoin}

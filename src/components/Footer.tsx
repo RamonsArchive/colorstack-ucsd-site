@@ -33,7 +33,8 @@ const Footer = () => {
       </div>
       <div className="flex flex-row gap-3 items-center py-3 px-10 border-t border-border-medium w-full bg-black">
         <p className="text-xs font-light text-text-muted">
-          &copy; {new Date().getFullYear()} ColorStack at UCSD. All rights
+          &copy; {new Date().getFullYear()} Color
+          <span className="text-primary-500">S</span>tack at UCSD. All rights
           reserved.
         </p>
         <span className="text-xs text-text-muted">🔱</span>

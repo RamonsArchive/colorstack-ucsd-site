@@ -23,13 +23,14 @@ const PrivacyPage = () => {
                 1. Information We Collect
               </h2>
               <p className="leading-relaxed">
-                ColorStack @ UCSD only collects information you choose to share
-                when contacting us through our contact forms, membership
-                applications, or event registrations. This typically includes
-                your name, email address, student information, and any messages
-                or project details you send. We don{"'"}t collect any
-                information automatically or track your browsing behavior beyond
-                basic website analytics.
+                Color
+                <span className="text-primary-500">S</span>tack @ UCSD only
+                collects information you choose to share when contacting us
+                through our contact forms, membership applications, or event
+                registrations. This typically includes your name, email address,
+                student information, and any messages or project details you
+                send. We don{"'"}t collect any information automatically or
+                track your browsing behavior beyond basic website analytics.
               </p>
             </section>
 
@@ -43,7 +44,9 @@ const PrivacyPage = () => {
                 registrations, and communicate club-related information. We don
                 {"'"}t use it for marketing, selling, or sharing with third
                 parties. Your information is only used for direct communication
-                related to ColorStack @ UCSD activities and operations.
+                related to Color
+                <span className="text-primary-500">S</span>tack @ UCSD
+                activities and operations.
               </p>
             </section>
 
@@ -55,9 +58,11 @@ const PrivacyPage = () => {
                 We don{"'"}t sell, trade, or share your personal information
                 with anyone. Your contact details stay private and are only used
                 for our direct communication. As a student organization
-                affiliated with ColorStack National, we may share aggregate,
-                anonymized data with the national organization for reporting
-                purposes, but never individual personal information.
+                affiliated with Color
+                <span className="text-primary-500">S</span>tack National, we may
+                share aggregate, anonymized data with the national organization
+                for reporting purposes, but never individual personal
+                information.
               </p>
             </section>
 
