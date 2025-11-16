@@ -110,7 +110,7 @@ const TermsOfServicePage = () => {
               <p className="leading-relaxed">
                 While we welcome all students interested in joining Color
                 <span className="text-primary-500">S</span>tack @ UCSD,
-                submitting a membership application or contacting us doesn't
+                submitting a membership application or contacting us doesn{"'"}t
                 guarantee membership. We evaluate each application based on our
                 membership criteria and capacity. Membership is subject to our
                 club by-laws and UCSD student organization policies.
