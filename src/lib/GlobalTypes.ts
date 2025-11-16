@@ -74,6 +74,7 @@ export type StaticCardType = {
 }
 
 export type BoardCardType = {
+  id: string;
   name: string;
   title: string;
   favoriteSong: string;

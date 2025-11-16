@@ -1,3 +1,6 @@
+import { BoardCardType } from "../lib/GlobalTypes";
+import { createMemberId } from "../lib/utils";
+
 export const boardHeroData = {
   title: "Meet the Board",
   description: (
@@ -28,6 +31,7 @@ export const boardHeroData = {
   },
 };
 
+// Executive Board Data for individual members
 export const executiveBoardData = {
   titleSection: {
     id: "executive-board",
@@ -36,6 +40,7 @@ export const executiveBoardData = {
   },
   cards: [
     {
+      id: createMemberId("Ramon Mitchell", "President1"), // essential for routing
       name: "Ramon Mitchell",
       title: "President1",
       favoriteSong: "Favorite Song",
@@ -59,6 +64,7 @@ export const executiveBoardData = {
       },
     },
     {
+      id: createMemberId("Ramon Mitchell", "President2"),
       name: "Ramon Mitchell",
       title: "President2",
       favoriteSong: "Favorite Song",
@@ -82,6 +88,7 @@ export const executiveBoardData = {
       },
     },
     {
+      id: createMemberId("Ramon Mitchell", "President3"),
       name: "Ramon Mitchell",
       title: "President3",
       favoriteSong: "Favorite Song",
@@ -115,6 +122,7 @@ export const developmentBoardData = {
   },
   cards: [
     {
+      id: createMemberId("Ramon Mitchell", "President"),
       name: "Ramon Mitchell",
       title: "President",
       favoriteSong: "Favorite Song",
@@ -138,6 +146,7 @@ export const developmentBoardData = {
       },
     },
     {
+      id: createMemberId("Ramon Mitchell", "President4"),
       name: "Ramon Mitchell",
       title: "President4",
       favoriteSong: "Favorite Song",
@@ -161,6 +170,7 @@ export const developmentBoardData = {
       },
     },
     {
+      id: createMemberId("Ramon Mitchell", "President5"),
       name: "Ramon Mitchell",
       title: "President5",
       favoriteSong: "Favorite Song",
@@ -184,6 +194,7 @@ export const developmentBoardData = {
       },
     },
     {
+      id: createMemberId("Ramon Mitchell", "President6"),
       name: "Ramon Mitchell",
       title: "President6",
       favoriteSong: "Favorite Song",
@@ -217,6 +228,7 @@ export const outreachBoardData = {
   },
   cards: [
     {
+      id: createMemberId("Ramon Mitchell", "President11"),
       name: "Ramon Mitchell",
       title: "President11",
       favoriteSong: "Favorite Song",
@@ -240,6 +252,7 @@ export const outreachBoardData = {
       },
     },
     {
+      id: createMemberId("Ramon Mitchell", "President12"),
       name: "Ramon Mitchell",
       title: "President12",
       favoriteSong: "Favorite Song",
@@ -273,6 +286,7 @@ export const financeBoardData = {
   },
   cards: [
     {
+      id: createMemberId("Ramon Mitchell", "President7"),
       name: "Ramon Mitchell",
       title: "President7",
       favoriteSong: "Favorite Song",
@@ -296,6 +310,7 @@ export const financeBoardData = {
       },
     },
     {
+      id: createMemberId("Ramon Mitchell", "President8"),
       name: "Ramon Mitchell",
       title: "President8",
       favoriteSong: "Favorite Song",
@@ -319,6 +334,7 @@ export const financeBoardData = {
       },
     },
     {
+      id: createMemberId("Ramon Mitchell", "President9"),
       name: "Ramon Mitchell",
       title: "President9",
       favoriteSong: "Favorite Song",
@@ -342,6 +358,7 @@ export const financeBoardData = {
       },
     },
     {
+      id: createMemberId("Ramon Mitchell", "President10"),
       name: "Ramon Mitchell",
       title: "President10",
       favoriteSong: "Favorite Song",
@@ -365,4 +382,26 @@ export const financeBoardData = {
       },
     },
   ],
+};
+
+
+// Combine all boards into one flat map for easy lookup
+export const allMembersMap: Record<string, BoardCardType> = {};
+
+
+// Helper to add members to map
+const addMembersToMap = (members: BoardCardType[]) => {
+  members.forEach((member) => {
+    allMembersMap[member.id] = member;
+  });
+};
+
+addMembersToMap(executiveBoardData.cards);
+addMembersToMap(developmentBoardData.cards);
+addMembersToMap(outreachBoardData.cards);
+addMembersToMap(financeBoardData.cards);
+
+// Export a function to get member by ID
+export const getMemberById = (id: string): BoardCardType | undefined => {
+  return allMembersMap[id];
 };

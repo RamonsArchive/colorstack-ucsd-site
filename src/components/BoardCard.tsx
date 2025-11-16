@@ -1,12 +1,16 @@
 import React from "react";
 import { BoardCardType } from "../lib/GlobalTypes";
 import Image from "next/image";
+import Link from "next/link";
 
 const BoardCard = ({ card }: { card: BoardCardType }) => {
-  const { name, title, image, favoriteSong, favoriteMovie, whyJoin, linkedin } =
-    card;
+  const { id, name, title, image } = card;
+  card;
   return (
-    <div className="flex flex-col w-full items-center justify-center gap-3 p-6 xs:p-8 rounded-4xl shadow-lg border border-border-medium active:border-white hover:border-white hover:shadow-xl transition-all duration-300 cursor-pointer bg-bg-secondary">
+    <Link
+      href={`/board/${id}`}
+      className="flex flex-col w-full items-center justify-center gap-3 p-6 xs:p-8 rounded-4xl shadow-lg border border-border-medium active:border-white hover:border-white hover:shadow-xl transition-all duration-300 cursor-pointer bg-bg-secondary"
+    >
       <div className="flex flex-row items-center justify-center w-full">
         <Image
           src={image.src}
@@ -22,7 +26,7 @@ const BoardCard = ({ card }: { card: BoardCardType }) => {
         </h3>
         <p className="text-sm xs:text-md text-text-secondary">{title}</p>
       </div>
-    </div>
+    </Link>
   );
 };
 

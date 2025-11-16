@@ -82,3 +82,21 @@ export const isSameDay = (
     return false;
   }
 };
+
+export const createMemberId = (name: string, title: string): string => {
+  const nameSlug = name
+    .toLowerCase()
+    .trim()
+    .replace(/[^\w\s-]/g, '') // Remove special chars
+    .replace(/\s+/g, '-')      // Replace spaces with hyphens
+    .replace(/-+/g, '-');      // Replace multiple hyphens with single
+  
+  const titleSlug = title
+    .toLowerCase()
+    .trim()
+    .replace(/[^\w\s-]/g, '')
+    .replace(/\s+/g, '-')
+    .replace(/-+/g, '-');
+  
+  return `${nameSlug}-${titleSlug}`;
+};
