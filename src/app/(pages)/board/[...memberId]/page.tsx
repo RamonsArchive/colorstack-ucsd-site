@@ -58,7 +58,7 @@ const MemberPage = async ({
                   }
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-text-secondary hover:text-text-primary transition-colors duration-300 text-sm xs:text-base"
+                  className="text-text-secondary underline hover:text-text-primary transition-colors duration-300 text-sm xs:text-base"
                 >
                   LinkedIn →
                 </Link>

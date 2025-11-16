@@ -36,7 +36,7 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
           <div className="flex justify-end">
             <button
               onClick={onClose}
-              className="text-text-primary hover:text-primary-500 transition-colors duration-300"
+              className="text-text-primary cursor-pointer hover:scale-110 hover:text-text-secondary transition-colors duration-300"
               aria-label="Close menu"
             >
               <X className="w-6 h-6" />

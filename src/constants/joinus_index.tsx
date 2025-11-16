@@ -9,7 +9,7 @@ export const joinusHeroData = {
   primaryButton: {
     name: "Membership Form",
     href: "https://docs.google.com/forms/d/e/1FAIpQLSfLo1o8Qt4-RID1um4CqLL8jh3R6oulKzvi8MjObgKdjBuqww/viewform?usp=share_link&ouid=102229617436923479024",
-    variant: "primary",
+    variant: "secondary" as const, // as const that string literal "primary"
   },
   images: {
     image1: {
@@ -18,18 +18,18 @@ export const joinusHeroData = {
       width: 100,
       height: 100,
     },
-  },
-  image2: {
-    src: "/Assets/ramon_mcdarghmitchell.png",
-    alt: "Join Us Image 2",
-    width: 100,
-    height: 100,
-  },
-  image3: {
-    src: "/Assets/ramon_mcdarghmitchell.png",
-    alt: "Join Us Image 3",
-    width: 100,
-    height: 100,
+    image2: {
+      src: "/Assets/ramon_mcdarghmitchell.png",
+      alt: "Join Us Image 2",
+      width: 100,
+      height: 100,
+    },
+    image3: {
+      src: "/Assets/ramon_mcdarghmitchell.png",
+      alt: "Join Us Image 3",
+      width: 100,
+      height: 100,
+    },
   },
 };
 
@@ -77,7 +77,7 @@ export const membershipFormData = {
     primaryButton: {
       name: "Membership Form",
       href: "https://docs.google.com/forms/d/e/1FAIpQLSfLo1o8Qt4-RID1um4CqLL8jh3R6oulKzvi8MjObgKdjBuqww/viewform?usp=share_link&ouid=102229617436923479024",
-      variant: "primary",
+      variant: "secondary" as const,
     },
   },
 };

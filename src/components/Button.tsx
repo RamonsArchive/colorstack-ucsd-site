@@ -13,6 +13,8 @@ const Button = ({
   return (
     <Link
       href={href}
+      target="_blank"
+      rel="noopener noreferrer"
       className={`${
         variant === "primary"
           ? "text-text-primary border border-border-medium hover:bg-text-primary hover:text-bg-primary transition-colors duration-300"

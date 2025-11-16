@@ -83,3 +83,9 @@ export type BoardCardType = {
   linkedin: string;
   image: ImageType;
 }
+
+
+export type FAQCardType = {
+  question: React.ReactNode;
+  answer: React.ReactNode;
+}
