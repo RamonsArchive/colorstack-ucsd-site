@@ -5,7 +5,6 @@ import Link from "next/link";
 
 const BoardCard = ({ card }: { card: BoardCardType }) => {
   const { id, name, title, image } = card;
-  card;
   return (
     <Link
       href={`/board/${id}`}

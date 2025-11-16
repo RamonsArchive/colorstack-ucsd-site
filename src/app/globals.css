@@ -2,7 +2,7 @@
 
 :root {
   --background: #020212;
-  --foreground: #CDCDCD;
+  --foreground: #cdcdcd;
 }
 
 @theme inline {
@@ -14,141 +14,145 @@
   --breakpoint-xs: 475px;
 
   /* Primary Color - Gold (Main accent color) */
-  --color-primary-50: #FEF9E7;    /* Very light gold */
-  --color-primary-100: #FDF3CF;   /* Light gold */
-  --color-primary-200: #FCE79F;   /* Lighter gold */
-  --color-primary-300: #FCDB6F;   /* Medium-light gold */
-  --color-primary-400: #FDCF3F;   /* Medium gold */
-  --color-primary-500: #FCB432;   /* Base gold */
-  --color-primary-600: #E09B1C;   /* Darker gold */
-  --color-primary-700: #B57A16;   /* Dark gold */
-  --color-primary-800: #8A5A11;   /* Darker gold */
-  --color-primary-900: #5F3B0B;   /* Darkest gold */
+  --color-primary-50: #fef9e7; /* Very light gold */
+  --color-primary-100: #fdf3cf; /* Light gold */
+  --color-primary-200: #fce79f; /* Lighter gold */
+  --color-primary-300: #fcdb6f; /* Medium-light gold */
+  --color-primary-400: #fdcf3f; /* Medium gold */
+  --color-primary-500: #fcb432; /* Base gold */
+  --color-primary-600: #e09b1c; /* Darker gold */
+  --color-primary-700: #b57a16; /* Dark gold */
+  --color-primary-800: #8a5a11; /* Darker gold */
+  --color-primary-900: #5f3b0b; /* Darkest gold */
 
   /* Secondary Color - Gray (Text and secondary elements) */
-  --color-secondary-50: #F9F9F9;   /* Very light gray */
-  --color-secondary-100: #F0F0F0;  /* Light gray */
-  --color-secondary-200: #E3E3E3;  /* Lighter gray */
-  --color-secondary-300: #D6D6D6;  /* Medium-light gray */
-  --color-secondary-400: #C9C9C9;  /* Medium gray */
-  --color-secondary-500: #CDCDCD;  /* Base gray */
-  --color-secondary-600: #A3A3A3;  /* Darker gray */
-  --color-secondary-700: #7A7A7A;  /* Dark gray */
-  --color-secondary-800: #525252;  /* Darker gray */
-  --color-secondary-900: #2B2B2B;  /* Darkest gray */
+  --color-secondary-50: #f9f9f9; /* Very light gray */
+  --color-secondary-100: #f0f0f0; /* Light gray */
+  --color-secondary-200: #e3e3e3; /* Lighter gray */
+  --color-secondary-300: #d6d6d6; /* Medium-light gray */
+  --color-secondary-400: #c9c9c9; /* Medium gray */
+  --color-secondary-500: #cdcdcd; /* Base gray */
+  --color-secondary-600: #a3a3a3; /* Darker gray */
+  --color-secondary-700: #7a7a7a; /* Dark gray */
+  --color-secondary-800: #525252; /* Darker gray */
+  --color-secondary-900: #2b2b2b; /* Darkest gray */
 
   /* Tertiary Color - Deep Blue (Complementary accent) */
-  --color-tertiary-50: #E8EAF6;    /* Very light blue */
-  --color-tertiary-100: #C5CAE9;   /* Light blue */
-  --color-tertiary-200: #9FA8DA;   /* Lighter blue */
-  --color-tertiary-300: #7986CB;   /* Medium-light blue */
-  --color-tertiary-400: #5C6BC0;   /* Medium blue */
-  --color-tertiary-500: #3F51B5;   /* Base blue */
-  --color-tertiary-600: #3949AB;   /* Darker blue */
-  --color-tertiary-700: #303F9F;   /* Dark blue */
-  --color-tertiary-800: #283593;   /* Darker blue */
-  --color-tertiary-900: #1A237E;   /* Darkest blue */
+  --color-tertiary-50: #e8eaf6; /* Very light blue */
+  --color-tertiary-100: #c5cae9; /* Light blue */
+  --color-tertiary-200: #9fa8da; /* Lighter blue */
+  --color-tertiary-300: #7986cb; /* Medium-light blue */
+  --color-tertiary-400: #5c6bc0; /* Medium blue */
+  --color-tertiary-500: #3f51b5; /* Base blue */
+  --color-tertiary-600: #3949ab; /* Darker blue */
+  --color-tertiary-700: #303f9f; /* Dark blue */
+  --color-tertiary-800: #283593; /* Darker blue */
+  --color-tertiary-900: #1a237e; /* Darkest blue */
 
   /* Background Color - Dark Navy (Main background) */
-  --color-background-50: #E8E8EA;  /* Very light navy */
-  --color-background-100: #C5C5CD;  /* Light navy */
-  --color-background-200: #9E9EAC;  /* Lighter navy */
-  --color-background-300: #77778B;  /* Medium-light navy */
-  --color-background-400: #50506A;  /* Medium navy */
-  --color-background-500: #292949;  /* Base navy */
-  --color-background-600: #1F1F38;  /* Darker navy */
-  --color-background-700: #151527;  /* Dark navy */
-  --color-background-800: #0B0B16;  /* Darker navy */
-  --color-background-900: #020212;  /* Darkest navy (your background) */
+  --color-background-50: #e8e8ea; /* Very light navy */
+  --color-background-100: #c5c5cd; /* Light navy */
+  --color-background-200: #9e9eac; /* Lighter navy */
+  --color-background-300: #77778b; /* Medium-light navy */
+  --color-background-400: #50506a; /* Medium navy */
+  --color-background-500: #292949; /* Base navy */
+  --color-background-600: #1f1f38; /* Darker navy */
+  --color-background-700: #151527; /* Dark navy */
+  --color-background-800: #0b0b16; /* Darker navy */
+  --color-background-900: #020212; /* Darkest navy (your background) */
 
   /* Success Color - Green */
-  --color-success-50: #E8F5E9;
-  --color-success-100: #C8E6C9;
-  --color-success-200: #A5D6A7;
-  --color-success-300: #81C784;
-  --color-success-400: #66BB6A;
-  --color-success-500: #4CAF50;
-  --color-success-600: #43A047;
-  --color-success-700: #388E3C;
-  --color-success-800: #2E7D32;
-  --color-success-900: #1B5E20;
+  --color-success-50: #e8f5e9;
+  --color-success-100: #c8e6c9;
+  --color-success-200: #a5d6a7;
+  --color-success-300: #81c784;
+  --color-success-400: #66bb6a;
+  --color-success-500: #4caf50;
+  --color-success-600: #43a047;
+  --color-success-700: #388e3c;
+  --color-success-800: #2e7d32;
+  --color-success-900: #1b5e20;
 
   /* Error Color - Red */
-  --color-error-50: #FFEBEE;
-  --color-error-100: #FFCDD2;
-  --color-error-200: #EF9A9A;
-  --color-error-300: #E57373;
-  --color-error-400: #EF5350;
-  --color-error-500: #F44336;
-  --color-error-600: #E53935;
-  --color-error-700: #D32F2F;
-  --color-error-800: #C62828;
-  --color-error-900: #B71C1C;
+  --color-error-50: #ffebee;
+  --color-error-100: #ffcdd2;
+  --color-error-200: #ef9a9a;
+  --color-error-300: #e57373;
+  --color-error-400: #ef5350;
+  --color-error-500: #f44336;
+  --color-error-600: #e53935;
+  --color-error-700: #d32f2f;
+  --color-error-800: #c62828;
+  --color-error-900: #b71c1c;
 
   /* Warning Color - Amber */
-  --color-warning-50: #FFF8E1;
-  --color-warning-100: #FFECB3;
-  --color-warning-200: #FFE082;
-  --color-warning-300: #FFD54F;
-  --color-warning-400: #FFCA28;
-  --color-warning-500: #FFC107;
-  --color-warning-600: #FFB300;
-  --color-warning-700: #FFA000;
-  --color-warning-800: #FF8F00;
-  --color-warning-900: #FF6F00;
+  --color-warning-50: #fff8e1;
+  --color-warning-100: #ffecb3;
+  --color-warning-200: #ffe082;
+  --color-warning-300: #ffd54f;
+  --color-warning-400: #ffca28;
+  --color-warning-500: #ffc107;
+  --color-warning-600: #ffb300;
+  --color-warning-700: #ffa000;
+  --color-warning-800: #ff8f00;
+  --color-warning-900: #ff6f00;
 
   /* Info Color - Cyan */
-  --color-info-50: #E0F7FA;
-  --color-info-100: #B2EBF2;
-  --color-info-200: #80DEEA;
-  --color-info-300: #4DD0E1;
-  --color-info-400: #26C6DA;
-  --color-info-500: #00BCD4;
-  --color-info-600: #00ACC1;
-  --color-info-700: #0097A7;
-  --color-info-800: #00838F;
+  --color-info-50: #e0f7fa;
+  --color-info-100: #b2ebf2;
+  --color-info-200: #80deea;
+  --color-info-300: #4dd0e1;
+  --color-info-400: #26c6da;
+  --color-info-500: #00bcd4;
+  --color-info-600: #00acc1;
+  --color-info-700: #0097a7;
+  --color-info-800: #00838f;
   --color-info-900: #006064;
 
   /* Neutral Variations (optimized for dark theme) */
-  --color-neutral-50: #FAFAFA;
-  --color-neutral-100: #F5F5F5;
-  --color-neutral-200: #EEEEEE;
-  --color-neutral-300: #E0E0E0;
-  --color-neutral-400: #BDBDBD;
-  --color-neutral-500: #9E9E9E;
+  --color-neutral-50: #fafafa;
+  --color-neutral-100: #f5f5f5;
+  --color-neutral-200: #eeeeee;
+  --color-neutral-300: #e0e0e0;
+  --color-neutral-400: #bdbdbd;
+  --color-neutral-500: #9e9e9e;
   --color-neutral-600: #757575;
   --color-neutral-700: #616161;
   --color-neutral-800: #424242;
   --color-neutral-900: #212121;
 
   /* Text Colors (for dark theme) */
-  --color-text-primary: #CDCDCD;           /* Main text color */
-  --color-text-secondary: #9E9E9E;         /* Secondary text */
-  --color-text-muted: #757575;             /* Muted text */
-  --color-text-inverse: #020212;           /* Dark text for light backgrounds */
-  --color-text-accent: #FCB432;            /* Gold text for highlights */
+  --color-text-primary: #cdcdcd; /* Main text color */
+  --color-text-secondary: #9e9e9e; /* Secondary text */
+  --color-text-muted: #757575; /* Muted text */
+  --color-text-inverse: #020212; /* Dark text for light backgrounds */
+  --color-text-accent: #fcb432; /* Gold text for highlights */
 
   /* Background Colors (dark theme optimized) */
-  --color-bg-primary: #020212;                          /* Main background */
-  --color-bg-secondary: #0B0B16;                        /* Card/container backgrounds */
-  --color-bg-elevated: #151527;                         /* Elevated surfaces */
-  --color-bg-card: rgba(21, 21, 39, 0.95);             /* Card with transparency */
-  --color-bg-overlay: rgba(2, 2, 18, 0.9);             /* Overlay backgrounds */
-  --color-bg-gradient-start: #FCB432;                   /* Gold gradient start */
-  --color-bg-gradient-end: #E09B1C;                     /* Gold gradient end */
-  --color-bg-hero: linear-gradient(135deg, #FCB432 0%, #E09B1C 100%); /* Hero gradient */
+  --color-bg-primary: #020212; /* Main background */
+  --color-bg-secondary: #0b0b16; /* Card/container backgrounds */
+  --color-bg-elevated: #151527; /* Elevated surfaces */
+  --color-bg-card: rgba(21, 21, 39, 0.95); /* Card with transparency */
+  --color-bg-overlay: rgba(2, 2, 18, 0.9); /* Overlay backgrounds */
+  --color-bg-gradient-start: #fcb432; /* Gold gradient start */
+  --color-bg-gradient-end: #e09b1c; /* Gold gradient end */
+  --color-bg-hero: linear-gradient(
+    135deg,
+    #fcb432 0%,
+    #e09b1c 100%
+  ); /* Hero gradient */
 
   /* Border & Shadow (adjusted for dark theme) */
   --color-border-light: rgba(205, 205, 205, 0.1);
   --color-border-medium: rgba(205, 205, 205, 0.2);
   --color-border-dark: rgba(205, 205, 205, 0.3);
-  --color-border-accent: #FCB432;
+  --color-border-accent: #fcb432;
 
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
   --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.6);
-  --shadow-glow: 0 0 20px rgba(252, 180, 50, 0.3);    /* Gold glow effect */
+  --shadow-glow: 0 0 20px rgba(252, 180, 50, 0.3); /* Gold glow effect */
 
   /* Custom Animations */
   --animate-wave-float: wave-float 6s ease-in-out infinite;
@@ -157,7 +161,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #020212;
-    --foreground: #CDCDCD;
+    --foreground: #cdcdcd;
   }
 }
 
@@ -223,7 +227,8 @@ svg #wave3 {
 }
 
 @keyframes wave-float-1 {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0px);
   }
   50% {
@@ -232,7 +237,8 @@ svg #wave3 {
 }
 
 @keyframes wave-float-2 {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0px);
   }
   50% {
@@ -241,7 +247,8 @@ svg #wave3 {
 }
 
 @keyframes wave-float-3 {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0px);
   }
   50% {

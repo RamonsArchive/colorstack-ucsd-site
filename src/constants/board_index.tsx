@@ -384,10 +384,8 @@ export const financeBoardData = {
   ],
 };
 
-
 // Combine all boards into one flat map for easy lookup
 export const allMembersMap: Record<string, BoardCardType> = {};
-
 
 // Helper to add members to map
 const addMembersToMap = (members: BoardCardType[]) => {

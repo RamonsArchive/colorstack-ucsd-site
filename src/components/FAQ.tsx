@@ -1,5 +1,4 @@
 import React from "react";
-import { FAQCardType } from "../lib/GlobalTypes";
 import TitleSection from "./TitleSection";
 import FAQCard from "./FAQCard";
 import { faqData } from "../constants/joinus_index";

@@ -2,7 +2,7 @@ import React from "react";
 import { fullScheduleData } from "../constants/schedule_index";
 import TitleSection from "./TitleSection";
 const FullSchedule = () => {
-  const { titleSection, iframe } = fullScheduleData;
+  const { titleSection } = fullScheduleData;
   return (
     <div className="flex flex-col gap-10 w-full">
       <TitleSection title={titleSection.title} index={titleSection.index} />

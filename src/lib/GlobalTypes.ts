@@ -1,55 +1,53 @@
 export type ActionState<T> = {
-    status: "SUCCESS" | "ERROR",
-    error: string | null,
-    data: T | null,
-  }
+  status: "SUCCESS" | "ERROR";
+  error: string | null;
+  data: T | null;
+};
 
 // Logo type definition
 export type Logo = {
-    id: string;
-    name: string;
-    href: string; 
-  };
-  
+  id: string;
+  name: string;
+  href: string;
+};
 
 export type CalendarEvent = {
-    id?: string;
-    summary?: string;
-    description?: string;
-    start: { dateTime?: string; date?: string };
-    end: { dateTime?: string; date?: string };
-    location?: string;
-    htmlLink?: string;
-  };
-
+  id?: string;
+  summary?: string;
+  description?: string;
+  start: { dateTime?: string; date?: string };
+  end: { dateTime?: string; date?: string };
+  location?: string;
+  htmlLink?: string;
+};
 
 export type FooterLinkItem = {
-    id: string;
-    name: string;
-    href: string;
-    email?: never;
+  id: string;
+  name: string;
+  href: string;
+  email?: never;
 };
 
 export type FooterEmailItem = {
-    id: string;
-    name: string;
-    email: string;
-    href?: never;
+  id: string;
+  name: string;
+  email: string;
+  href?: never;
 };
 
 export type FooterItem = FooterLinkItem | FooterEmailItem;
 
 export type FooterDataType = {
-    index: number;
-    title: string;
-    data: FooterItem[];
-}
+  index: number;
+  title: string;
+  data: FooterItem[];
+};
 
 export type ButtonType = {
   name: string;
   href: string;
   variant: "primary" | "secondary";
-}
+};
 
 export type ImageType = {
   src: string;
@@ -64,14 +62,13 @@ export type GenericHeroData = {
   primaryButton?: ButtonType;
   secondaryButton?: ButtonType;
   images: { image1: ImageType; image2: ImageType; image3: ImageType };
-}
-
+};
 
 export type StaticCardType = {
   icon: string;
   title: string;
   description: string;
-}
+};
 
 export type BoardCardType = {
   id: string;
@@ -82,10 +79,9 @@ export type BoardCardType = {
   whyJoin: React.ReactNode;
   linkedin: string;
   image: ImageType;
-}
-
+};
 
 export type FAQCardType = {
   question: React.ReactNode;
   answer: React.ReactNode;
-}
+};

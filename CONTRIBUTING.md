@@ -18,12 +18,14 @@ Thank you for contributing to the ColorStack @ UCSD website! This document outli
 ### Before You Start
 
 1. Make sure you're on the latest `main` branch:
+
    ```bash
    git checkout main
    git pull origin main
    ```
 
 2. Install dependencies:
+
    ```bash
    npm install
    ```
@@ -54,16 +56,19 @@ Thank you for contributing to the ColorStack @ UCSD website! This document outli
 ### Committing Changes
 
 1. **Stage your changes**:
+
    ```bash
    git add .
    ```
 
 2. **Format your code**:
+
    ```bash
    npm run format
    ```
 
 3. **Commit with a clear message**:
+
    ```bash
    git commit -m "feat: add new board member"
    # or
@@ -104,6 +109,7 @@ Thank you for contributing to the ColorStack @ UCSD website! This document outli
 ### Creating the Pull Request
 
 1. **Push your branch**:
+
    ```bash
    git push origin feature/your-feature-name
    ```
@@ -161,6 +167,7 @@ Thank you for contributing to the ColorStack @ UCSD website! This document outli
 ### Board Members
 
 Edit `src/constants/board_index.tsx`:
+
 - Add member to appropriate board section
 - Include all required fields (name, title, image, etc.)
 - Use `createMemberId()` utility for the `id` field
@@ -172,6 +179,7 @@ Events are fetched from Google Calendar API. For manual events, update the calen
 ### Partners/Companies
 
 Edit `src/constants/home_index.tsx`:
+
 - Add to `WhereWeGoneData.logos` or `PartnersData.logos`
 - Include logo file in appropriate `public/` folder
 - Update `logoPaths` mapping
@@ -183,4 +191,3 @@ Edit `src/constants/home_index.tsx`:
 - Check existing issues before creating new ones
 
 Thank you for contributing! 🎉
-

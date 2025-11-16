@@ -24,8 +24,8 @@ const TermsOfServicePage = () => {
               </h2>
               <p className="leading-relaxed">
                 By accessing or using this website, you agree to these Terms of
-                Service. If you don't agree, please don't use the site. These
-                terms apply to all visitors, members, and users of the
+                Service. If you don{"'"}t agree, please don{"'"}t use the site.
+                These terms apply to all visitors, members, and users of the
                 ColorStack @ UCSD website.
               </p>
             </section>
@@ -37,9 +37,9 @@ const TermsOfServicePage = () => {
               <p className="leading-relaxed">
                 This is the official website for ColorStack @ UCSD, a student
                 organization at UC San Diego dedicated to supporting Black and
-                Hispanic software engineering students. It's designed to help
-                students learn about our organization, join our community, and
-                stay informed about events and opportunities.
+                Hispanic software engineering students. It{"'"}s designed to
+                help students learn about our organization, join our community,
+                and stay informed about events and opportunities.
               </p>
             </section>
 
@@ -49,9 +49,9 @@ const TermsOfServicePage = () => {
               </h2>
               <p className="leading-relaxed">
                 You can reach out through our contact forms for membership
-                inquiries, event questions, or general information. We'll do our
-                best to respond to all messages within a reasonable time. Please
-                be respectful and professional in all communications.
+                inquiries, event questions, or general information. We{"'"}ll do
+                our best to respond to all messages within a reasonable time.
+                Please be respectful and professional in all communications.
               </p>
             </section>
 
@@ -63,21 +63,21 @@ const TermsOfServicePage = () => {
                 All content on this website, including text, images, logos, and
                 design, is the property of ColorStack @ UCSD or used with
                 permission. Feel free to explore and get inspired, but please
-                respect our intellectual property and don't reproduce content
-                without permission.
+                respect our intellectual property and don{"'"}t reproduce
+                content without permission.
               </p>
             </section>
 
             <section className="flex flex-col gap-4">
               <h2 className="text-2xl font-semibold text-text-primary">
-                5. What You Can't Do
+                5. What You Can{"'"}t Do
               </h2>
               <p className="leading-relaxed">
-                Please don't try to hack the site, send spam, upload malicious
-                files, use the contact forms for inappropriate purposes, or
-                engage in any activity that could harm the website or other
-                users. Just be respectful and professional. Violations may
-                result in being banned from the site.
+                Please don{"'"}t try to hack the site, send spam, upload
+                malicious files, use the contact forms for inappropriate
+                purposes, or engage in any activity that could harm the website
+                or other users. Just be respectful and professional. Violations
+                may result in being banned from the site.
               </p>
             </section>
 
@@ -87,8 +87,8 @@ const TermsOfServicePage = () => {
               </h2>
               <p className="leading-relaxed">
                 We only collect the information you choose to share when
-                contacting us. We won't sell your data or use it for anything
-                other than responding to your message and managing club
+                contacting us. We won{"'"}t sell your data or use it for
+                anything other than responding to your message and managing club
                 operations. Your privacy matters to us. See our{" "}
                 <a
                   href="/privacy-policy"
@@ -106,8 +106,8 @@ const TermsOfServicePage = () => {
               </h2>
               <p className="leading-relaxed">
                 While we welcome all students interested in joining ColorStack @
-                UCSD, submitting a membership application or contacting us
-                doesn't guarantee membership. We evaluate each application based
+                UCSD, submitting a membership application or contacting us doesn
+                {"'"}t guarantee membership. We evaluate each application based
                 on our membership criteria and capacity. Membership is subject
                 to our club bylaws and UCSD student organization policies.
               </p>
@@ -134,9 +134,10 @@ const TermsOfServicePage = () => {
               </h2>
               <p className="leading-relaxed">
                 We try to keep the site running smoothly, but sometimes things
-                break or we need to update it. We can't guarantee it'll always
-                be available 24/7. As a student-run organization, maintenance
-                may be delayed during academic breaks or busy periods.
+                break or we need to update it. We can{"'"}t guarantee it{"'"}ll
+                always be available 24/7. As a student-run organization,
+                maintenance may be delayed during academic breaks or busy
+                periods.
               </p>
             </section>
 
@@ -146,9 +147,10 @@ const TermsOfServicePage = () => {
               </h2>
               <p className="leading-relaxed">
                 We might update these terms occasionally to reflect changes in
-                our organization or website. If we make significant changes,
-                we'll try to let you know by updating the "Last updated" date.
-                Using the site after changes means you accept the new terms.
+                our organization or website. If we make significant changes, we
+                {"'"}ll try to let you know by updating the {'"'}Last updated
+                {'"'} date. Using the site after changes means you accept the
+                new terms.
               </p>
             </section>
 
@@ -164,7 +166,7 @@ const TermsOfServicePage = () => {
                 >
                   colorstackatucsd@ucsd.edu
                 </a>
-                . We're happy to clarify anything!
+                . We{"'"}re happy to clarify anything!
               </p>
             </section>
           </div>
