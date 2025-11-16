@@ -52,14 +52,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://colorstackucsd.org"), // Update with your actual domain
+  metadataBase: new URL("https://colorstack-ucsd-site.vercel.app"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://colorstackucsd.org", // Update with your actual domain
+    url: "https://colorstack-ucsd-site.vercel.app",
     siteName: "ColorStack @ UCSD",
     title:
       "ColorStack @ UCSD | Black & Hispanic Software Engineering Community",
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
       "Join the only Black & Hispanic software engineering club at UC San Diego. Get mentorship, technical workshops, and connections to Google, Apple, Meta, Qualcomm, and more. Part of ColorStack National.",
     images: [
       {
-        url: "/Assets/Logos/ct_banner_crop1.png",
+        url: "https://colorstack-ucsd-site.vercel.app/Assets/Logos/ct_banner_crop1.png",
         width: 1200,
         height: 630,
         alt: "ColorStack @ UCSD Logo",
@@ -80,7 +80,9 @@ export const metadata: Metadata = {
       "ColorStack @ UCSD | Black & Hispanic Software Engineering Community",
     description:
       "Join the only Black & Hispanic software engineering club at UC San Diego. Mentorship, workshops, and connections to top tech companies.",
-    images: ["/Assets/Logos/ct_banner_crop1.png"],
+    images: [
+      "https://colorstack-ucsd-site.vercel.app/Assets/Logos/ct_banner_crop1.png",
+    ],
     creator: "@colorstacksd", // Update if you have Twitter handle
   },
   robots: {
@@ -136,8 +138,8 @@ export default function RootLayout({
     "@type": "Organization",
     name: "ColorStack @ UCSD",
     alternateName: "ColorStack UCSD",
-    url: "https://colorstackucsd.org", // Update with your actual domain
-    logo: "https://colorstackucsd.org/Assets/Logos/ct_banner_crop1.png",
+    url: "https://colorstack-ucsd-site.vercel.app",
+    logo: "https://colorstack-ucsd-site.vercel.app/Assets/Logos/ct_banner_crop1.png",
     description:
       "ColorStack @ UCSD is the only Black & Hispanic software engineering club at UC San Diego, providing mentorship, technical workshops, and career development resources.",
     address: {

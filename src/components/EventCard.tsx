@@ -24,11 +24,11 @@ const EventCard = ({ event }: { event: CalendarEvent }) => {
       href={event.htmlLink || "/schedule"}
       target="_blank"
       rel="noopener noreferrer"
-      className="group flex flex-col gap-4 bg-bg-secondary p-6 rounded-4xl shadow-lg border border-border-medium hover:border-white hover:shadow-xl transition-all duration-300 cursor-pointer"
+      className="group flex flex-col gap-4 bg-bg-secondary p-6 rounded-4xl shadow-lg border border-border-medium active:border-white hover:border-white hover:shadow-xl transition-all duration-300 cursor-pointer"
     >
       {/* Title - More prominent */}
-      <div className="pb-2 border-b border-border-medium group-hover:border-white transition-colors duration-300">
-        <h3 className="text-xl xs:text-2xl font-semibold text-text-primary group-hover:text-text-primary transition-colors duration-300">
+      <div className="pb-2 border-b border-border-medium group-active:border-white group-hover:border-white transition-colors duration-300">
+        <h3 className="text-xl xs:text-2xl font-semibold text-text-primary group-active:text-text-primary group-hover:text-text-primary transition-colors duration-300">
           {summary || "Untitled Event"}
         </h3>
       </div>
@@ -66,7 +66,7 @@ const EventCard = ({ event }: { event: CalendarEvent }) => {
       {/* Date & Time - Combined if same day */}
       {(formattedStartDate && formattedStartTime) ||
       (formattedEndDate && formattedEndTime) ? (
-        <div className="flex flex-col gap-1.5 pt-2 border-t border-border-medium group-hover:border-white transition-colors duration-300">
+        <div className="flex flex-col gap-1.5 pt-2 border-t border-border-medium group-active:border-white group-hover:border-white transition-colors duration-300">
           <p className="text-text-secondary font-semibold text-xs uppercase tracking-wide opacity-70">
             When
           </p>

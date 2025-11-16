@@ -3,7 +3,7 @@ import { FAQCardType } from "../lib/GlobalTypes";
 const FAQCard = ({ card }: { card: FAQCardType }) => {
   const { question, answer } = card;
   return (
-    <div className="group flex flex-col gap-3 bg-bg-secondary p-8 rounded-4xl shadow-lg border border-border-medium hover:border-white hover:shadow-xl transition-all duration-300 cursor-pointer">
+    <div className="group flex flex-col gap-3 bg-bg-secondary p-8 rounded-4xl shadow-lg border border-border-medium active:border-white hover:border-white hover:shadow-xl transition-all duration-300 cursor-pointer">
       <h3 className="text-xl xs:text-2xl font-semibold text-text-primary">
         {question}
       </h3>

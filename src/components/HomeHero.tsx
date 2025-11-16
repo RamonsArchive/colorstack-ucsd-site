@@ -105,7 +105,7 @@ const HomeHero = () => {
                   alt={homeHeroData.images.image1.alt}
                   width={200}
                   height={200}
-                  className="absolute top-10 right-0 lg:top-0 w-22 h-22 xs:w-36 xs:h-36 sm:w-48 sm:h-48 object-cover rounded-4xl transition-all duration-300 ease-in-out hover:scale-110 -rotate-8 shadow-lg z-10"
+                  className="absolute top-10 right-0 lg:top-0 w-32 h-32 xs:w-36 xs:h-36 sm:w-48 sm:h-48 object-cover rounded-4xl transition-all duration-300 ease-in-out hover:scale-110 -rotate-8 shadow-lg z-10"
                 />
                 {/* left image */}
                 <Image
@@ -113,7 +113,7 @@ const HomeHero = () => {
                   alt={homeHeroData.images.image2.alt}
                   width={200}
                   height={200}
-                  className="absolute bottom-15 left-0 xs:bottom-5 lg:bottom-30 w-22 h-22 xs:w-32 xs:h-32 sm:w-36 sm:h-36  object-cover rounded-4xl transition-all duration-300 ease-in-out hover:scale-110 rotate-6 shadow-lg z-10"
+                  className="absolute bottom-5 left-0 xs:bottom-5 lg:bottom-30 w-32 h-32 xs:w-32 xs:h-32 sm:w-36 sm:h-36  object-cover rounded-4xl transition-all duration-300 ease-in-out hover:scale-110 rotate-6 shadow-lg z-10"
                 />
                 {/* center image */}
                 <Image
@@ -121,7 +121,7 @@ const HomeHero = () => {
                   alt={homeHeroData.images.image3.alt}
                   width={200}
                   height={200}
-                  className="absolute top-25 right-23 xs:right-35 sm:right-60 lg:top-60 lg:right-10 w-26 h-26 xs:w-32 xs:h-32 sm:w-38 sm:h-38 object-cover rounded-4xl transition-all duration-300 ease-in-out hover:scale-110 rotate-3 shadow-lg z-10"
+                  className="hidden md:block absolute top-25 right-23 xs:right-35 sm:right-60 lg:top-60 lg:right-10 w-26 h-26 xs:w-32 xs:h-32 sm:w-38 sm:h-38 object-cover rounded-4xl transition-all duration-300 ease-in-out hover:scale-110 rotate-3 shadow-lg z-10"
                 />
               </div>
             </div>
