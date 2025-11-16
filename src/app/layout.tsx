@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import LocalFont from "next/font/local";
+import { Analytics } from "@vercel/analytics/react";
 
 const kumbhSans = LocalFont({
   src: "./fonts/Kumbh_Sans/KumbhSans-VariableFont_YOPQ,wght.woff2",
@@ -197,6 +198,7 @@ export default function RootLayout({
         />
       </head>
       <body className={`${kumbhSans.variable} antialiased`}>{children}</body>
+      <Analytics />
     </html>
   );
 }
