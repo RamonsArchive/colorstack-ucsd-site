@@ -31,8 +31,6 @@ export const fetchUpcomingEvents = async () => {
             //cache: "no-store",
             next: { revalidate: 300 } // Or cache for 5 minutes
         });
-        console.log("Response from Google Calendar API", res);
-        console.log(res);
         if (!res.ok) {
             return parseServerActionResponse({
                 status: "ERROR",
@@ -41,7 +39,6 @@ export const fetchUpcomingEvents = async () => {
             })
         }
         const data = await res.json();
-        console.log(data);
         return parseServerActionResponse({
             status: "SUCCESS",
             error: null,
@@ -49,12 +46,15 @@ export const fetchUpcomingEvents = async () => {
         })
 
     } catch (error) {
+        // Better error handling - log the actual error
+        const errorMessage = error instanceof Error ? error.message : "Unknown error occurred";
+        console.error("Error fetching calendar events:", errorMessage);
+        
         return parseServerActionResponse({
             status: "ERROR",
-            error: null,
+            error: errorMessage,
             data: null,
         })
-        
     }
     
 }

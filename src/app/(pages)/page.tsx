@@ -8,7 +8,10 @@ import OurMission from "@/src/components/OurMission";
 export default async function Home() {
   // call fetch upcoming evens on server using server actions for maximum performance
   const upcomingEvents = await fetchUpcomingEvents();
-  console.log(upcomingEvents);
+
+  // Handle errors gracefully - if fetch fails, show empty array instead of crashing
+  const events =
+    upcomingEvents.status === "SUCCESS" ? upcomingEvents.data || [] : [];
 
   return (
     <div className="flex items-center w-full">
@@ -20,7 +23,7 @@ export default async function Home() {
         <div className="flex flex-col gap-26 p-5 lg:p-10">
           <WhereWeGone />
           <Partners />
-          <UpcomingEvents upcomingEvents={upcomingEvents.data} />
+          <UpcomingEvents upcomingEvents={events} />
           <OurMission />
         </div>
       </div>
