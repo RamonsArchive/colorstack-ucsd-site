@@ -25,13 +25,13 @@ jobs:
         run: npm ci
 
       - name: Run ESLint
-        run: npm run lint
+        run: npm run lint || (echo "❌ ESLint found issues. Run 'npm run lint:fix' to auto-fix some issues." && exit 1)
 
       - name: Check Prettier formatting
-        run: npx prettier --check "src/**/*.{ts,tsx,js,jsx}" "*.{js,ts,json,md}"
+        run: npm run format:check || (echo "❌ Prettier found formatting issues. Run 'npm run format' to fix." && exit 1)
 
       - name: Check TypeScript
-        run: npx tsc --noEmit
+        run: npm run type-check || (echo "❌ TypeScript found type errors. Fix the errors above." && exit 1)
 
   build:
     name: Build Check

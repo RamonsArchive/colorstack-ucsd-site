@@ -6,16 +6,18 @@
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json,css,md}\" \"*.{js,ts,json,md}\"",
+    "lint": "eslint . && echo '✅ ESLint: No issues found!'",
+    "lint:fix": "eslint . --fix && echo '✅ ESLint: Fixed all auto-fixable issues!'",
+    "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json,css,md}\" \"*.{js,ts,json,md}\" && echo '✅ Prettier: All files formatted!'",
     "format:check": "prettier --check \"src/**/*.{ts,tsx,js,jsx,json,css,md}\" \"*.{js,ts,json,md}\"",
-    "type-check": "tsc --noEmit",
-    "test": "echo \"No tests yet\" && exit 0"
+    "type-check": "tsc --noEmit && echo '✅ TypeScript: No type errors!'",
+    "test": "echo \"No tests yet\" && exit 0",
+    "check": "npm run lint && npm run format:check && npm run type-check && echo '✅ All checks passed!'"
   },
   "dependencies": {
     "babel-plugin-react-compiler": "^1.0.0",
     "googleapis": "^166.0.0",
+    "lucide-react": "^0.553.0",
     "next": "16.0.0-beta.0",
     "react": "19.1.0",
     "react-dom": "19.1.0"

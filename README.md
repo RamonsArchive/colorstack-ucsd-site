@@ -143,21 +143,32 @@ npm start
 ### Code Quality
 
 ```bash
-# Lint code
+# Lint code (shows success message if no issues)
 npm run lint
 
-# Fix linting issues
+# Fix linting issues automatically
 npm run lint:fix
 
 # Format code with Prettier
 npm run format
 
-# Check formatting
+# Check formatting (used in CI)
 npm run format:check
 
-# Type check
+# Type check with TypeScript (tsc = TypeScript Compiler)
+# Checks for type errors without building
 npm run type-check
+
+# Run all checks at once (lint + format + type-check)
+npm run check
 ```
+
+**What is `tsc`?**
+
+- `tsc` = TypeScript Compiler
+- `tsc --noEmit` = Check types without generating JavaScript files
+- Catches type errors, missing imports, wrong types before runtime
+- **Always run this before pushing** to catch missing dependencies like `lucide-react`
 
 ## Contributing
 

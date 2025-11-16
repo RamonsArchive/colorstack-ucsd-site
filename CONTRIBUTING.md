@@ -44,8 +44,13 @@ Thank you for contributing to the ColorStack @ UCSD website! This document outli
 
 2. **Test your changes**:
    - Run `npm run dev` to test locally
-   - Check that the build works: `npm run build`
-   - Verify linting passes: `npm run lint`
+   - **Run all checks before committing**: `npm run check`
+     - This runs: lint + format check + type check
+   - Or run individually:
+     - `npm run lint` - Check code quality
+     - `npm run format:check` - Check formatting
+     - `npm run type-check` - Check TypeScript types (catches missing imports!)
+   - Verify build works: `npm run build`
 
 3. **Data updates** (for board members, events, etc.):
    - Update the appropriate file in `src/constants/`
