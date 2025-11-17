@@ -72,7 +72,7 @@ const InfiniteScrollLogos = ({
                 href={logo.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="shrink-0 text-text-primary opacity-60 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center w-12 h-12"
+                className="shrink-0 text-text-primary opacity-70 active:opacity-100 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center w-12 h-12"
               >
                 <Image
                   src={logoPath}
@@ -96,7 +96,7 @@ const InfiniteScrollLogos = ({
                 href={logo.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="shrink-0 text-text-primary opacity-60 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center w-12 h-12"
+                className="shrink-0 text-text-primary opacity-70 active:opacity-100 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center w-12 h-12"
               >
                 <Image
                   src={logoPath}
@@ -120,7 +120,7 @@ const InfiniteScrollLogos = ({
                 href={logo.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="shrink-0 text-text-primary opacity-60 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center w-12 h-12"
+                className="shrink-0 text-text-primary opacity-70 active:opacity-100 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center w-12 h-12"
               >
                 <Image
                   src={logoPath}
@@ -144,7 +144,7 @@ const InfiniteScrollLogos = ({
                 href={logo.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="shrink-0 text-text-primary opacity-60 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center w-12 h-12"
+                className="shrink-0 text-text-primary opacity-70 active:opacity-100 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center w-12 h-12"
               >
                 <Image
                   src={logoPath}
@@ -168,7 +168,7 @@ const InfiniteScrollLogos = ({
                 href={logo.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="shrink-0 text-text-primary opacity-60 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center w-12 h-12"
+                className="shrink-0 text-text-primary opacity-70 active:opacity-100 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center w-12 h-12"
               >
                 <Image
                   src={logoPath}

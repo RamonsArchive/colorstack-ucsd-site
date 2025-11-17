@@ -20,8 +20,10 @@ export const fetchUpcomingEvents = async () => {
       )}/events`
     );
 
+    const timeMin = new Date().toISOString();
+
     url.searchParams.set("key", apiKey);
-    //url.searchParams.set("timeMin", timeMin);
+    url.searchParams.set("timeMin", timeMin);
     url.searchParams.set("singleEvents", "true");
     url.searchParams.set("orderBy", "startTime");
     url.searchParams.set("maxResults", "3");
