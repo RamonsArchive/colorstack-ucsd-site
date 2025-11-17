@@ -14,7 +14,7 @@ export const boardHeroData = {
   ),
   images: {
     image1: {
-      src: "/Board/Executive/emilynguyen_pres.jpg",
+      src: "/Board/Executive/emilynguyen_pres.JPG",
       alt: "Team Image 1",
       width: 100,
       height: 100,
