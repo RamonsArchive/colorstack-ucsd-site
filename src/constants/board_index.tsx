@@ -51,7 +51,7 @@ export const executiveBoardData = {
       whyJoin: <></>,
       linkedin: "https://www.linkedin.com/in/emn007/",
       image: {
-        src: "/Board/Executive/emilynguyen_pres.jpg",
+        src: "/Board/Executive/emilynguyen_pres.JPG",
         alt: "Emily Nguyen",
         width: 350,
         height: 350,
