@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Background -->
+  <rect width="400" height="400" fill="#1a1a1a" rx="20"/>
+  
+  <!-- Person Icon (simplified silhouette) -->
+  <g transform="translate(200, 120)">
+    <!-- Head -->
+    <circle cx="0" cy="0" r="40" fill="#CDCDCD" opacity="0.6"/>
+    <!-- Body -->
+    <path d="M-60 50 Q-60 80 -40 100 L40 100 Q60 80 60 50 L60 40 L-60 40 Z" fill="#CDCDCD" opacity="0.6"/>
+  </g>
+  
+  <!-- Coming Soon Text -->
+  <text x="200" y="280" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#CDCDCD" text-anchor="middle" opacity="0.8">Coming Soon</text>
+</svg>
+

@@ -10,19 +10,19 @@ export const scheduleHeroData = {
   ),
   images: {
     image1: {
-      src: "/Assets/ramon_mcdarghmitchell.png",
+      src: "/Board/Executive/emilynguyen_pres.jpg",
       alt: "Schedule Image 1",
       width: 100,
       height: 100,
     },
     image2: {
-      src: "/Assets/ramon_mcdarghmitchell.png",
+      src: "/Board/Executive/Arturo_vpo.jpg",
       alt: "Schedule Image 2",
       width: 100,
       height: 100,
     },
     image3: {
-      src: "/Assets/ramon_mcdarghmitchell.png",
+      src: "/Board/Development/ramon_mcdarghmitchell.png",
       alt: "Schedule Image 3",
       width: 100,
       height: 100,

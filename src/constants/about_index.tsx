@@ -12,19 +12,19 @@ export const aboutHeroData = {
   ),
   images: {
     image1: {
-      src: "/Assets/ramon_mcdarghmitchell.png",
+      src: "/Board/Executive/emilynguyen_pres.jpg",
       alt: "Home Image 1",
       width: 100,
       height: 100,
     },
     image2: {
-      src: "/Assets/ramon_mcdarghmitchell.png",
+      src: "/Board/Executive/Arturo_vpo.jpg",
       alt: "Home Image 2",
       width: 100,
       height: 100,
     },
     image3: {
-      src: "/Assets/ramon_mcdarghmitchell.png",
+      src: "/Board/Development/ramon_mcdarghmitchell.png",
       alt: "Home Image 3",
       width: 100,
       height: 100,
