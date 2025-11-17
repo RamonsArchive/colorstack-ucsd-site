@@ -119,8 +119,8 @@ const GenericHero = ({ heroData }: { heroData: GenericHeroData }) => {
                 />
                 {/* center image */}
                 <Image
-                  src={images.image3.src}
-                  alt={images.image3.alt}
+                  src={images.image1.src}
+                  alt={images.image1.alt}
                   width={200}
                   height={200}
                   className="absolute top-[30%] right-[5%] w-32 h-32 xs:w-48 xs:h-48 sm:w-58 sm:h-58 object-cover rounded-4xl transition-all duration-300 ease-in-out hover:scale-110 -rotate-3 shadow-lg z-10"
