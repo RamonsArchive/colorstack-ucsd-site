@@ -68,9 +68,9 @@ export const metadata: Metadata = {
       "Join the only Black & Hispanic software engineering club at UC San Diego. Get mentorship, technical workshops, and connections to Google, Apple, Meta, Qualcomm, and more. Part of ColorStack National.",
     images: [
       {
-        url: "https://colorstackucsd.org/Assets/Logos/ct_banner_crop1.png",
+        url: "https://colorstackucsd.org/Assets/Logos/ct_logo.png",
         width: 1200,
-        height: 630,
+        height: 1200,
         alt: "ColorStack @ UCSD Logo",
       },
     ],
@@ -81,7 +81,7 @@ export const metadata: Metadata = {
       "ColorStack @ UCSD | Black & Hispanic Software Engineering Community",
     description:
       "Join the only Black & Hispanic software engineering club at UC San Diego. Mentorship, workshops, and connections to top tech companies.",
-    images: ["https://colorstackucsd.org/Assets/Logos/ct_banner_crop1.png"],
+    images: ["https://colorstackucsd.org/Assets/Logos/ct_logo.png"],
     creator: "@colorstacksd", // Update if you have Twitter handle
   },
   robots: {
