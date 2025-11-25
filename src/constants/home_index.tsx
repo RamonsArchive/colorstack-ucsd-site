@@ -9,7 +9,7 @@ export const homeHeroData = {
   ),
   description: (
     <>
-      Interested in joining the only Black & Hispanic software engineering club
+      Interested in joining the only Black & Hispanic Computer Science club
       at UCSD? Look no further than Color
       <span className="text-primary-500">S</span>tack — we welcome everyone!
       Fill out a membership form and come say hi at our next event!
