@@ -264,3 +264,23 @@ svg #wave3 {
     transform: rotate(360deg);
   }
 }
+
+/* Fix for Instagram's in-app browser initial scroll issue */
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  /* Prevent initial scroll offset in Instagram's browser */
+  position: relative;
+}
+
+/* Ensure navbar stays in normal flow on Instagram */
+@media (max-width: 1023px) {
+  body {
+    /* Prevent Instagram from applying weird initial scroll */
+    scroll-padding-top: 0;
+  }
+}

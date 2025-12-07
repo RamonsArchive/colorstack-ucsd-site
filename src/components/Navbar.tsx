@@ -56,7 +56,7 @@ const StaticNavbar = ({
   isMenuOpen: boolean;
 }) => {
   return (
-    <div className="lg:hidden relative z-10">
+    <div className="lg:hidden relative z-10 w-full shrink-0">
       <NavbarContent onMenuToggle={onMenuToggle} isMenuOpen={isMenuOpen} />
     </div>
   );
@@ -93,25 +93,51 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    let lastScrollY = window.scrollY;
+    // Initialize scroll position to handle Instagram's browser quirks
+    let lastScrollY = 0;
     let ticking = false;
+    let hasScrolled = false;
+    let initialized = false;
+
+    // Force scroll to top on mount to fix Instagram's initial scroll position
+    const forceScrollToTop = () => {
+      if (window.scrollY > 0 || window.pageYOffset > 0) {
+        window.scrollTo(0, 0);
+      }
+      lastScrollY = 0;
+      setShowFloatingNavbar(false);
+      initialized = true;
+    };
+
+    // Initialize immediately and after delays to catch Instagram's delayed scroll
+    forceScrollToTop();
+    const initTimeout1 = setTimeout(forceScrollToTop, 50);
+    const initTimeout2 = setTimeout(forceScrollToTop, 200);
 
     const updateNavbar = () => {
-      const currentScrollY = window.scrollY;
+      if (!initialized) return;
+
+      const currentScrollY = Math.max(0, window.scrollY || window.pageYOffset || 0);
       const navbarHeight = 46; // Height of the navbar
 
-      // Only show floating navbar when scrolling down past the static navbar
-      if (currentScrollY > navbarHeight) {
+      // Detect if user has actually scrolled (not just initial load quirk)
+      const scrollDelta = Math.abs(currentScrollY - lastScrollY);
+      if (scrollDelta > 2) {
+        hasScrolled = true;
+      }
+
+      // Only show floating navbar when we've actually scrolled and are past navbar
+      if (hasScrolled && currentScrollY > navbarHeight) {
         // Scrolling down
         if (currentScrollY > lastScrollY) {
           setShowFloatingNavbar(true);
         }
         // Scrolling up - hide floating navbar
-        else {
+        else if (currentScrollY < lastScrollY) {
           setShowFloatingNavbar(false);
         }
       } else {
-        // Above navbar height, hide floating navbar
+        // At top or haven't scrolled yet, hide floating navbar
         setShowFloatingNavbar(false);
       }
 
@@ -120,14 +146,18 @@ const Navbar = () => {
     };
 
     const handleScroll = () => {
-      if (!ticking) {
+      if (!ticking && initialized) {
         window.requestAnimationFrame(updateNavbar);
         ticking = true;
       }
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      clearTimeout(initTimeout1);
+      clearTimeout(initTimeout2);
+    };
   }, []);
 
   // Close menu when clicking outside (optional enhancement)
