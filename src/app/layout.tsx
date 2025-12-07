@@ -158,6 +158,9 @@ export default function RootLayout({
       "https://www.instagram.com/colorstacksd",
       "https://discord.gg/4xp8BtwVgR",
       "https://colorstack.org",
+      "https://clutchstudio.dev",
+      "https://goldeneagle.one",
+      "https://digitalrevolution.foundation",
     ],
     memberOf: {
       "@type": "Organization",

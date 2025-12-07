@@ -56,7 +56,7 @@ const StaticNavbar = ({
   isMenuOpen: boolean;
 }) => {
   return (
-    <div className="lg:hidden">
+    <div className="lg:hidden relative z-10">
       <NavbarContent onMenuToggle={onMenuToggle} isMenuOpen={isMenuOpen} />
     </div>
   );
