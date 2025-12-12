@@ -117,7 +117,10 @@ const Navbar = () => {
     const updateNavbar = () => {
       if (!initialized) return;
 
-      const currentScrollY = Math.max(0, window.scrollY || window.pageYOffset || 0);
+      const currentScrollY = Math.max(
+        0,
+        window.scrollY || window.pageYOffset || 0
+      );
       const navbarHeight = 46; // Height of the navbar
 
       // Detect if user has actually scrolled (not just initial load quirk)
