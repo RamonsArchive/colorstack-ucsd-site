@@ -5,8 +5,8 @@ import Image from "next/image";
 
 const HomeHero = () => {
   return (
-    <div className="flex flex-col h-[calc(100dvh-46px)] shrink-0 max-w-7xl w-full overflow-hidden">
-      <div className="relative flex flex-col items-center justify-center xs:border xs:border-border-medium rounded-4xl p-8 lg:p-12 h-full overflow-hidden shadow-lg">
+    <div className="flex flex-col h-[calc(100dvh-46px-1.25rem)] lg:h-[calc(100dvh-46px-2.5rem)] shrink-0 max-w-7xl w-full overflow-hidden">
+      <div className="relative flex flex-col items-center justify-center xs:border xs:border-border-medium rounded-4xl p-8 lg:p-16 overflow-hidden shadow-lg">
         {/* Futuristic wave/radial background */}
         <div className="absolute inset-0 opacity-80 pointer-events-none z-10 overflow-hidden">
           {/* Wave effect with dots - inline SVG for individual wave animation */}
