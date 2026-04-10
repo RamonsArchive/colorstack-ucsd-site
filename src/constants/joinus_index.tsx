@@ -9,7 +9,12 @@ export const joinusHeroData = {
   primaryButton: {
     name: "Membership Form",
     href: "https://docs.google.com/forms/d/e/1FAIpQLSfLo1o8Qt4-RID1um4CqLL8jh3R6oulKzvi8MjObgKdjBuqww/viewform?usp=share_link&ouid=102229617436923479024",
-    variant: "secondary" as const, // as const that string literal "primary"
+    variant: "secondary" as const,
+  },
+  secondaryButton: {
+    name: "Board Form",
+    href: "https://forms.gle/pFCUSrULrMCfXy3Y9",
+    variant: "primary" as const,
   },
   images: {
     image1: {
@@ -77,7 +82,12 @@ export const membershipFormData = {
     primaryButton: {
       name: "Membership Form",
       href: "https://docs.google.com/forms/d/e/1FAIpQLSfLo1o8Qt4-RID1um4CqLL8jh3R6oulKzvi8MjObgKdjBuqww/viewform?usp=share_link&ouid=102229617436923479024",
-      variant: "secondary" as const,
+      variant: "secondary",
+    },
+    secondaryButton: {
+      name: "Board Form",
+      href: "https://forms.gle/pFCUSrULrMCfXy3Y9",
+      variant: "primary",
     },
   },
 };

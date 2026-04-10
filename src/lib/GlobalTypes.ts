@@ -85,3 +85,12 @@ export type FAQCardType = {
   question: React.ReactNode;
   answer: React.ReactNode;
 };
+
+export type AnnouncementType = {
+  id: string;
+  title: string;
+  description: string;
+  image?: ImageType;
+  link?: string;
+  date: string;
+};

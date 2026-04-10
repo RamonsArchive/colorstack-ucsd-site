@@ -50,7 +50,7 @@ export const homeHeroData = {
 export const WhereWeGoneData = {
   titleSection: {
     id: "where-we-gone",
-    index: 1,
+    index: 2,
     title: "Where We've Gone",
   },
   logos: [
@@ -68,7 +68,7 @@ export const WhereWeGoneData = {
 export const PartnersData = {
   titleSection: {
     id: "partners",
-    index: 2,
+    index: 3,
     title: "Partners",
   },
   logos: [
@@ -100,6 +100,14 @@ export const UpcomingEventsData = {
     id: "upcoming-events",
     index: 3,
     title: "Upcoming Events",
+  },
+};
+
+export const AnnouncementBoardData = {
+  titleSection: {
+    id: "announcements",
+    index: 1,
+    title: "Announcements",
   },
 };
 
@@ -136,7 +144,7 @@ export const OurMissionData = {
 export const homeTitleSections = {
   mission: {
     id: "mission",
-    index: 4,
+    index: 5,
     title: "Our Mission",
   },
 };
