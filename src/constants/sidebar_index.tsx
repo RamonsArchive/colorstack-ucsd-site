@@ -14,7 +14,7 @@ export const sidebarData = {
     ),
     text2: (
       <>
-        Building a community of Black and Hispanic software engineers at UCSD.
+        Building a community of Black and Hispanic students in tech at UCSD.
       </>
     ),
   },
