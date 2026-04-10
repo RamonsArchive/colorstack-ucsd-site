@@ -45,7 +45,7 @@ const AnnouncementPopup = () => {
 
   return (
     <div
-      className={`fixed bottom-6 right-6 z-50 max-w-sm w-full transition-all duration-300 ease-out ${
+      className={`fixed bottom-6 right-4 left-4 xs:left-auto xs:right-6 z-50 xs:max-w-sm xs:w-full transition-all duration-300 ease-out ${
         exiting ? "translate-y-4 opacity-0" : "translate-y-0 opacity-100"
       }`}
     >
